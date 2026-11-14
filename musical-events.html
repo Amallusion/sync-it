@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Musical Events · Sync it Entertainment Cafe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('syncit:tr'))document.documentElement.classList.add('tr-cover','pg-events')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600&family=Barlow:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Bowlby+One&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300..600&family=Oswald:wght@500;600;700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Quicksand:wght@500;600;700&family=Racing+Sans+One&family=Reem+Kufi:wght@400..700&family=Shrikhand&family=Special+Elite&family=Tajawal:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/events.css">
+<script>try{var m=sessionStorage.getItem('syncit:mode')||localStorage.getItem('syncit:mode');if(m==='girls'){document.documentElement.setAttribute('data-mode','girls');var l=document.createElement('link');l.rel='stylesheet';l.href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Quicksand:wght@400..700&family=Pacifico&family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@400;500;700&display=swap";document.head.appendChild(l);}}catch(e){}</script>
+<link rel="stylesheet" href="css/girls-mode.css">
+</head>
+<body class="events">
+<div id="site-header"></div>
+
+<section class="ev-hero" id="top" aria-labelledby="evH1">
+  <div class="ev-wall" aria-hidden="true">
+    <div class="ev-wall__row" id="wallA"></div>
+    <div class="ev-wall__row ev-wall__row--r" id="wallB"></div>
+  </div>
+  <div class="ev-hero__shade"></div>
+  <div class="ev-hero__copy">
+    <p class="ev-hero__script" data-i18n="ev_script">The heart of Sync it</p>
+    <h1 id="evH1"><span data-i18n="ev_h1a">Musical</span> <span data-i18n="ev_h1b">Events</span></h1>
+    <p class="ev-hero__sub" data-i18n="ev_sub">Artist nights hosted by Sync it. Every night has its own poster, its own world and its own playlist.</p>
+    <div class="ev-hero__cta">
+      <a class="btn btn--red" href="#upcoming"><span data-i18n="ev_up">Upcoming nights</span></a>
+      <a class="btn btn--ghost" href="#past"><span data-i18n="ev_past">Past nights</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="ev-list" id="upcoming" aria-labelledby="upH">
+  <div class="ev-list__head">
+    <h2 id="upH" data-i18n="ev_up">Upcoming nights</h2>
+    <p data-i18n="ev_up_s">Choose a night and step into its world.</p>
+  </div>
+  <div class="ev-cards" id="cardsUp"></div>
+</section>
+<div id="roomsUp"></div>
+
+<section class="ev-list ev-list--past" id="past" aria-labelledby="pastH">
+  <div class="ev-list__head">
+    <h2 id="pastH" data-i18n="ev_past">Past nights</h2>
+    <p data-i18n="ev_past_s">The performer, the footage and the songs, kept for you.</p>
+  </div>
+  <div class="ev-cards" id="cardsPast"></div>
+</section>
+<div id="roomsPast"></div>
+
+<nav class="ev-dots" id="evDots" data-i18n-attr="aria-label:ev_jump"></nav>
+
+<dialog class="ev-lb" id="evLb"><button class="ev-lb__x" id="evLbX" type="button" data-i18n-attr="aria-label:ev_close">✕</button><img id="evLbImg" alt=""></dialog>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/events-data.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu · Sync it Entertainment Cafe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@300..600&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/menu.css">
+<script>try{var m=sessionStorage.getItem('syncit:mode')||localStorage.getItem('syncit:mode');if(m==='girls'){document.documentElement.setAttribute('data-mode','girls');var l=document.createElement('link');l.rel='stylesheet';l.href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Quicksand:wght@400..700&family=Pacifico&family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@400;500;700&display=swap";document.head.appendChild(l);}}catch(e){}</script>
+<link rel="stylesheet" href="css/girls-mode.css">
+</head>
+<body class="menu">
+<div id="site-header"></div>
+
+<!-- Hero: muted background video, then the coffee pours in and the milk rises behind it -->
+<section class="mhero" id="mhero" aria-label="Menu">
+  <div class="mhero__sticky">
+    <video class="mhero__vid" id="mvid" src="assets/menu/hero.mp4" poster="assets/menu/hero-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="mhero__shade"></div>
+    <div class="mhero__copy" id="mcopy">
+      <h1 data-i18n="m_title">The Menu</h1>
+      <p data-i18n="m_sub">Cold, hot, fresh and sweet. Open a section, then tap an item to see what is in it.</p>
+      <a class="mbtn" href="#chips" data-i18n="m_cta">Explore the menu</a>
+    </div>
+    <svg class="mhero__flow" id="mflow" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="mgCoffee" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1000"><stop offset="0" stop-color="#4a2514"/><stop offset=".5" stop-color="#2b150c"/><stop offset="1" stop-color="#170a05"/></linearGradient>
+        <linearGradient id="mgCrema" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0"><stop offset="0" stop-color="#b8763a"/><stop offset=".5" stop-color="#d9a265"/><stop offset="1" stop-color="#b8763a"/></linearGradient>
+      </defs>
+      <path id="fCoffee" fill="url(#mgCoffee)"/>
+      <path id="fSw1" fill="none" stroke="#c48646" stroke-width="3" stroke-linecap="round" opacity=".28"/>
+      <path id="fSw2" fill="none" stroke="#e6cb82" stroke-width="2" stroke-linecap="round" opacity=".2"/>
+      <path id="fSw3" fill="none" stroke="#c48646" stroke-width="4" stroke-linecap="round" opacity=".22"/>
+      <path id="fCrema" fill="none" stroke="url(#mgCrema)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="fStream" fill="none" stroke="#3a1b0e" stroke-width="22" stroke-linecap="round"/>
+      <path id="fStreamHi" fill="none" stroke="#c48646" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+      <path id="fMilk" fill="#f1e6cb"/>
+      <path id="fMilkEdge" fill="none" stroke="#e6cb82" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+    </svg>
+    <div class="mhero__mid" id="mmid" aria-hidden="true" data-i18n="m_mid">What are you having?</div>
+    <div class="mhero__hint" id="mhint" aria-hidden="true"><span data-i18n="m_scroll">Scroll</span><i></i></div>
+  </div>
+</section>
+
+<main class="mwrap" id="menu">
+  <header class="mintro">
+    <h2 data-i18n="m_intro_h">Pick a section</h2>
+    <p data-i18n="m_intro_p">One section opens at a time. The best sellers are the five most ordered.</p>
+  </header>
+  <nav class="chips" id="chips" data-i18n-attr="aria-label:m_chips"></nav>
+  <div class="msecs" id="msecs"></div>
+</main>
+
+<dialog class="idlg" id="idlg" aria-labelledby="idName">
+  <div class="idlg__box">
+    <button class="idlg__x" id="idX" type="button" data-i18n-attr="aria-label:d_close">✕</button>
+    <div class="idlg__ph" id="idPh"><img id="idImg" alt=""></div>
+    <div class="idlg__txt">
+      <span class="idlg__cat" id="idCat"></span>
+      <h3 id="idName"></h3>
+      <p id="idDesc"></p>
+      <div class="idlg__nav">
+        <button type="button" id="idPrev" data-i18n-attr="aria-label:d_prev"><span aria-hidden="true">←</span></button>
+        <span id="idCount"></span>
+        <button type="button" id="idNext" data-i18n-attr="aria-label:d_next"><span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

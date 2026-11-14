@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chess · Sync it Entertainment Cafe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('syncit:tr'))document.documentElement.classList.add('tr-cover','pg-chess')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Bowlby+One&family=Jost:wght@300..700&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/chess.css">
+<script>try{var m=sessionStorage.getItem('syncit:mode')||localStorage.getItem('syncit:mode');if(m==='girls'){document.documentElement.setAttribute('data-mode','girls');var l=document.createElement('link');l.rel='stylesheet';l.href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Quicksand:wght@400..700&family=Pacifico&family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@400;500;700&display=swap";document.head.appendChild(l);}}catch(e){}</script>
+<link rel="stylesheet" href="css/girls-mode.css">
+</head>
+<body class="chess">
+<div id="site-header"></div>
+
+<!-- piece set: drawn for Sync it, flat Art Deco -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="pc-P" viewBox="0 0 100 100"><g class="pcg"><rect x="27" y="79" width="46" height="9" rx="2.5"/><path d="M33 79 C34 66 41 60 43 50 H57 C59 60 66 66 67 79 Z"/><rect x="37" y="44" width="26" height="7" rx="3.5"/><circle cx="50" cy="31" r="12"/></g></symbol>
+    <symbol id="pc-R" viewBox="0 0 100 100"><g class="pcg"><rect x="25" y="79" width="50" height="9" rx="2.5"/><path d="M33 79 L36 44 H64 L67 79 Z"/><path d="M29 44 V18 H39 V27 H45 V18 H55 V27 H61 V18 H71 V44 Z"/><path class="pcl" d="M31 36 H69"/></g></symbol>
+    <symbol id="pc-B" viewBox="0 0 100 100"><g class="pcg"><rect x="26" y="79" width="48" height="9" rx="2.5"/><path d="M34 79 C36 70 41 63 43 57 C32 50 32 32 50 20 C68 32 68 50 57 57 C59 63 64 70 66 79 Z"/><circle cx="50" cy="15" r="5"/><path class="pcl" d="M45 33 L55 43 M40 60 H60"/></g></symbol>
+    <symbol id="pc-N" viewBox="0 0 100 100"><g class="pcg"><rect x="26" y="79" width="48" height="9" rx="2.5"/><path d="M31 79 C31 62 34 52 43 44 C37 45 31 49 25 54 L20 49 C22 41 28 36 36 30 L37 17 L46 23 C52 18 62 19 68 27 C77 38 75 62 70 79 Z"/><circle class="pce" cx="47" cy="33" r="2.8"/><path class="pcl" d="M26 50 L31 47 M55 28 C62 32 66 42 65 56"/></g></symbol>
+    <symbol id="pc-Q" viewBox="0 0 100 100"><g class="pcg"><rect x="27" y="79" width="46" height="9" rx="2.5"/><path d="M33 79 L25 33 L33 52 L38 22 L44 49 L50 17 L56 49 L62 22 L67 52 L75 33 L67 79 Z"/><circle cx="25" cy="29" r="4"/><circle cx="38" cy="18" r="4"/><circle cx="50" cy="13" r="4.5"/><circle cx="62" cy="18" r="4"/><circle cx="75" cy="29" r="4"/><path class="pcl" d="M35 68 H65"/></g></symbol>
+    <symbol id="pc-K" viewBox="0 0 100 100"><g class="pcg"><rect x="26" y="79" width="48" height="9" rx="2.5"/><path d="M34 79 C35 66 30 58 30 50 C30 41 40 36 50 40 C60 36 70 41 70 50 C70 58 65 66 66 79 Z"/><rect x="46.5" y="9" width="7" height="30" rx="2"/><rect x="39" y="17" width="22" height="7" rx="2"/><path class="pcl" d="M36 68 H64"/></g></symbol>
+  </defs>
+</svg>
+
+<!-- ============ Hero ============ -->
+<section class="ch-hero" id="top" aria-labelledby="chH1">
+  <div class="ch-hero__copy">
+    <p class="ch-hero__script" data-i18n="ch_script">at Sync it</p>
+    <h1 id="chH1" data-i18n="ch_h1">Chess</h1>
+    <p class="ch-hero__sub" data-i18n="ch_sub">Pull up a chair. Play the Sync it family any time, or sit across from a real opponent on Wednesday night.</p>
+    <div class="ch-hero__cta">
+      <a class="btn btn--gold" href="#play"><span data-i18n="ch_cta_play">Play the family</span></a>
+      <a class="btn btn--ghost" href="#wednesday"><span data-i18n="ch_cta_wed">Wednesday Blitz</span></a>
+    </div>
+  </div>
+  <div class="ch-hero__prints" aria-hidden="true">
+    <figure class="print print--a"><img src="assets/chess/night-2.jpg" alt=""></figure>
+    <figure class="print print--b"><img src="assets/chess/night-1.jpg" alt=""></figure>
+  </div>
+</section>
+
+<!-- ============ Play ============ -->
+<section class="ch-play" id="play" aria-labelledby="chPlayH">
+  <header class="ch-sec">
+    <h2 id="chPlayH" data-i18n="ch_play_h">The table is set</h2>
+    <p data-i18n="ch_play_s">Choose who sits across from you, pick a clock, and make your first move.</p>
+  </header>
+
+  <div class="ch-table">
+    <div class="ch-boardcol">
+      <div class="ch-player ch-player--top" id="pTop"></div>
+      <div class="ch-boardwrap">
+        <div class="ch-board" id="board" role="grid" tabindex="0" data-i18n-attr="aria-label:ch_board_label"></div>
+        <div class="ch-promo" id="promo" hidden></div>
+        <div class="ch-over" id="over" hidden></div>
+      </div>
+      <div class="ch-player ch-player--bot" id="pBot"></div>
+      <p class="ch-sr" id="srLive" aria-live="polite"></p>
+    </div>
+
+    <aside class="ch-side" aria-label="Game panel">
+      <!-- before the game -->
+      <div class="ch-setup" id="setup">
+        <h3 data-i18n="ch_who">Who do you want to play?</h3>
+        <div class="fam" id="famPick" role="radiogroup" data-i18n-attr="aria-label:ch_who"></div>
+        <div class="opt" role="group" aria-labelledby="optColL">
+          <span class="opt__l" id="optColL" data-i18n="ch_colour">You play</span>
+          <div class="seg" id="segColour"></div>
+        </div>
+        <div class="opt" role="group" aria-labelledby="optTimeL">
+          <span class="opt__l" id="optTimeL" data-i18n="ch_clock">Clock</span>
+          <div class="seg seg--time" id="segTime"></div>
+        </div>
+        <button class="btn btn--gold ch-start" id="btnStart" type="button"><span data-i18n="ch_start">Start the game</span></button>
+        <p class="ch-engine-note" id="engNote" hidden></p>
+      </div>
+
+      <!-- during the game -->
+      <div class="ch-game" id="game" hidden>
+        <div class="talk" id="talk">
+          <div class="talk__av"><img id="talkImg" alt=""></div>
+          <div class="talk__bubble" id="talkBubble" aria-live="polite"><span id="talkTxt"></span></div>
+        </div>
+        <p class="ch-status" id="status"></p>
+        <div class="moves" id="moves" aria-label="Moves" data-i18n-attr="aria-label:ch_moves"><ol id="moveList"></ol></div>
+        <div class="ctl">
+          <button class="ctl__b" id="btnHint" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg><span data-i18n="ch_hint">Hint</span></button>
+          <button class="ctl__b" id="btnUndo" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 4 9l5-5M4 9h10a6 6 0 0 1 0 12h-3"/></svg><span data-i18n="ch_undo">Take back</span></button>
+          <button class="ctl__b" id="btnFlip" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v14m0 0-3-3m3 3 3-3M17 20V6m0 0-3 3m3-3 3 3"/></svg><span data-i18n="ch_flip">Flip board</span></button>
+          <button class="ctl__b ctl__b--x" id="btnResign" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 0h12l-2 4 2 4H5"/></svg><span id="resignTxt" data-i18n="ch_resign">Resign</span></button>
+        </div>
+        <button class="ch-new" id="btnNew" type="button" data-i18n="ch_new">New game</button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ Wednesday Blitz ============ -->
+<section class="ch-night" id="wednesday" aria-labelledby="chNightH">
+  <div class="ch-night__in">
+    <div class="ch-night__poster">
+      <button class="posterbtn" id="posterBtn" type="button" data-i18n-attr="aria-label:ch_poster_view"><img src="assets/chess/poster.jpg" alt="" id="posterImg"></button>
+    </div>
+    <div class="ch-night__copy">
+      <p class="ch-night__kicker" data-i18n="ch_n_kicker">With Gambit, at Sync it</p>
+      <h2 id="chNightH"><span data-i18n="ch_n_h1">Blitz Chess</span> <span data-i18n="ch_n_h2">Tournament</span></h2>
+      <p class="ch-night__lead" data-i18n="ch_n_lead">Real boards, real clocks, real people across the table. Every Wednesday at Sync it.</p>
+      <ul class="facts">
+        <li><b data-i18n="ch_f1a">Every Wednesday</b><span data-i18n="ch_f1b">Same table, every week.</span></li>
+        <li><b data-i18n="ch_f2a">20 participants only</b><span data-i18n="ch_f2b">A small field keeps every game close.</span></li>
+        <li><b data-i18n="ch_f3a">Win a free show ticket</b><span data-i18n="ch_f3b">First prize is a night at one of our shows.</span></li>
+      </ul>
+      <p class="ch-night__next" id="nextWed"></p>
+      <div class="ch-night__photos">
+        <figure class="print print--c"><img src="assets/chess/night-1.jpg" alt="" data-i18n-attr="alt:ch_ph1"><figcaption data-i18n="ch_cap">A Wednesday at Sync it</figcaption></figure>
+        <figure class="print print--d"><img src="assets/chess/night-2.jpg" alt="" data-i18n-attr="alt:ch_ph2"></figure>
+      </div>
+    </div>
+  </div>
+  <div class="ch-night__checks" aria-hidden="true"></div>
+</section>
+
+<dialog class="ch-lb" id="chLb"><button class="ch-lb__x" id="chLbX" type="button" data-i18n-attr="aria-label:ch_close">✕</button><img id="chLbImg" alt=""></dialog>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/engine/chess.min.js"></script>
+<script src="js/chess-engine.js"></script>
+<script src="js/chess.js"></script>
+</body>
+</html>

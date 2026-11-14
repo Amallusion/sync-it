@@ -1,0 +1,316 @@
+:root{
+  --torn1:polygon(0.0% 0.6%,4.5% 1.4%,9.1% 1.0%,13.6% 1.6%,18.2% 1.6%,22.7% 0.2%,27.3% 0.0%,31.8% 2.2%,36.4% 0.7%,40.9% 0.6%,45.5% 2.6%,50.0% 1.2%,54.5% 2.2%,59.1% 1.2%,63.6% 1.7%,68.2% 0.4%,72.7% 1.7%,77.3% 2.3%,81.8% 1.4%,86.4% 1.9%,90.9% 1.7%,95.5% 0.2%,98.0% 0.0%,98.5% 7.1%,99.2% 14.3%,99.9% 21.4%,97.7% 28.6%,98.8% 35.7%,98.1% 42.9%,97.7% 50.0%,98.1% 57.1%,97.6% 64.3%,99.0% 71.4%,97.9% 78.6%,98.8% 85.7%,97.6% 92.9%,100.0% 97.7%,95.5% 99.7%,90.9% 99.6%,86.4% 99.4%,81.8% 97.5%,77.3% 98.9%,72.7% 98.4%,68.2% 99.2%,63.6% 98.7%,59.1% 99.0%,54.5% 99.1%,50.0% 98.5%,45.5% 98.5%,40.9% 97.6%,36.4% 98.2%,31.8% 97.6%,27.3% 97.8%,22.7% 97.4%,18.2% 98.3%,13.6% 99.6%,9.1% 97.8%,4.5% 97.5%,2.4% 100.0%,1.5% 92.9%,1.9% 85.7%,0.5% 78.6%,2.2% 71.4%,1.5% 64.3%,0.7% 57.1%,0.2% 50.0%,2.2% 42.9%,2.6% 35.7%,0.2% 28.6%,2.1% 21.4%,1.1% 14.3%,0.4% 7.1%);
+  --torn2:polygon(0.0% 1.2%,4.5% 1.5%,9.1% 2.4%,13.6% 1.2%,18.2% 1.3%,22.7% 1.5%,27.3% 0.5%,31.8% 1.3%,36.4% 1.6%,40.9% 2.1%,45.5% 0.2%,50.0% 0.8%,54.5% 0.2%,59.1% 2.1%,63.6% 1.8%,68.2% 0.1%,72.7% 2.6%,77.3% 2.5%,81.8% 1.7%,86.4% 1.6%,90.9% 0.4%,95.5% 0.0%,98.6% 0.0%,99.8% 7.1%,99.5% 14.3%,99.4% 21.4%,99.9% 28.6%,98.8% 35.7%,98.9% 42.9%,97.8% 50.0%,98.7% 57.1%,98.3% 64.3%,98.7% 71.4%,98.3% 78.6%,98.8% 85.7%,99.3% 92.9%,100.0% 97.4%,95.5% 97.4%,90.9% 97.8%,86.4% 98.2%,81.8% 99.2%,77.3% 99.4%,72.7% 99.2%,68.2% 99.8%,63.6% 98.0%,59.1% 99.0%,54.5% 97.8%,50.0% 99.0%,45.5% 97.5%,40.9% 97.8%,36.4% 100.0%,31.8% 99.5%,27.3% 97.6%,22.7% 98.8%,18.2% 97.5%,13.6% 99.0%,9.1% 99.8%,4.5% 98.4%,2.0% 100.0%,0.7% 92.9%,0.2% 85.7%,0.9% 78.6%,2.5% 71.4%,2.0% 64.3%,0.3% 57.1%,0.6% 50.0%,0.3% 42.9%,0.2% 35.7%,2.1% 28.6%,0.5% 21.4%,1.5% 14.3%,1.2% 7.1%);
+  --torn3:polygon(0.0% 1.4%,4.5% 0.9%,9.1% 2.2%,13.6% 0.8%,18.2% 1.3%,22.7% 0.9%,27.3% 1.1%,31.8% 2.5%,36.4% 0.3%,40.9% 1.2%,45.5% 0.6%,50.0% 0.9%,54.5% 2.6%,59.1% 0.9%,63.6% 1.6%,68.2% 1.1%,72.7% 1.9%,77.3% 1.2%,81.8% 0.4%,86.4% 1.1%,90.9% 1.1%,95.5% 2.1%,98.5% 0.0%,99.5% 7.1%,98.2% 14.3%,99.2% 21.4%,98.7% 28.6%,99.4% 35.7%,98.9% 42.9%,98.0% 50.0%,98.7% 57.1%,98.0% 64.3%,98.0% 71.4%,98.5% 78.6%,98.3% 85.7%,99.0% 92.9%,100.0% 98.4%,95.5% 98.0%,90.9% 99.7%,86.4% 97.6%,81.8% 99.0%,77.3% 99.6%,72.7% 99.6%,68.2% 99.1%,63.6% 99.8%,59.1% 99.0%,54.5% 98.9%,50.0% 98.3%,45.5% 98.8%,40.9% 97.6%,36.4% 98.3%,31.8% 99.2%,27.3% 97.7%,22.7% 98.2%,18.2% 97.5%,13.6% 98.1%,9.1% 97.5%,4.5% 99.5%,0.7% 100.0%,2.5% 92.9%,0.1% 85.7%,2.4% 78.6%,2.4% 71.4%,0.4% 64.3%,0.4% 57.1%,2.4% 50.0%,2.5% 42.9%,2.3% 35.7%,1.9% 28.6%,2.0% 21.4%,0.8% 14.3%,0.0% 7.1%);
+  --tornb:polygon(0.0% 0.6%,3.3% 0.4%,6.7% 0.3%,10.0% 1.5%,13.3% 0.9%,16.7% 1.1%,20.0% 0.9%,23.3% 0.6%,26.7% 1.2%,30.0% 0.9%,33.3% 1.2%,36.7% 1.1%,40.0% 1.3%,43.3% 0.7%,46.7% 0.2%,50.0% 0.2%,53.3% 1.2%,56.7% 0.3%,60.0% 1.0%,63.3% 1.0%,66.7% 0.1%,70.0% 1.3%,73.3% 0.1%,76.7% 1.4%,80.0% 1.3%,83.3% 0.3%,86.7% 1.2%,90.0% 1.2%,93.3% 0.2%,96.7% 1.1%,99.8% 0.0%,98.5% 5.6%,98.9% 11.1%,98.4% 16.7%,99.9% 22.2%,99.5% 27.8%,99.0% 33.3%,99.0% 38.9%,99.7% 44.4%,98.6% 50.0%,98.6% 55.6%,99.5% 61.1%,99.8% 66.7%,98.9% 72.2%,99.3% 77.8%,98.9% 83.3%,99.2% 88.9%,99.4% 94.4%,100.0% 100.0%,96.7% 99.8%,93.3% 99.3%,90.0% 98.8%,86.7% 99.3%,83.3% 98.8%,80.0% 99.1%,76.7% 98.6%,73.3% 99.0%,70.0% 99.5%,66.7% 99.8%,63.3% 99.9%,60.0% 99.9%,56.7% 98.6%,53.3% 98.6%,50.0% 98.8%,46.7% 99.8%,43.3% 98.9%,40.0% 99.8%,36.7% 98.6%,33.3% 99.0%,30.0% 98.8%,26.7% 99.0%,23.3% 99.3%,20.0% 98.6%,16.7% 98.5%,13.3% 99.6%,10.0% 99.3%,6.7% 98.8%,3.3% 98.9%,0.7% 100.0%,0.7% 94.4%,1.5% 88.9%,0.4% 83.3%,0.3% 77.8%,1.1% 72.2%,0.4% 66.7%,1.4% 61.1%,0.5% 55.6%,1.5% 50.0%,0.6% 44.4%,1.4% 38.9%,1.2% 33.3%,1.2% 27.8%,0.3% 22.2%,0.3% 16.7%,0.0% 11.1%,0.3% 5.6%);
+  --tear-a:polygon(0.0% 100.0%,0.0% 58.0%,1.4% 50.8%,2.9% 65.8%,4.3% 61.8%,5.7% 63.3%,7.1% 60.7%,8.6% 31.3%,10.0% 35.6%,11.4% 72.5%,12.9% 45.7%,14.3% 70.5%,15.7% 16.2%,17.1% 51.1%,18.6% 23.6%,20.0% 54.5%,21.4% 41.6%,22.9% 30.6%,24.3% 21.9%,25.7% 42.6%,27.1% 60.4%,28.6% 64.5%,30.0% 18.8%,31.4% 65.9%,32.9% 17.6%,34.3% 57.8%,35.7% 17.0%,37.1% 30.1%,38.6% 57.9%,40.0% 39.4%,41.4% 21.9%,42.9% 74.2%,44.3% 58.0%,45.7% 43.0%,47.1% 62.9%,48.6% 54.3%,50.0% 47.3%,51.4% 39.2%,52.9% 61.8%,54.3% 61.1%,55.7% 63.2%,57.1% 70.2%,58.6% 26.4%,60.0% 46.3%,61.4% 19.1%,62.9% 36.6%,64.3% 13.6%,65.7% 43.6%,67.1% 43.2%,68.6% 30.2%,70.0% 47.3%,71.4% 45.2%,72.9% 27.0%,74.3% 66.8%,75.7% 36.4%,77.1% 44.2%,78.6% 36.5%,80.0% 61.7%,81.4% 13.1%,82.9% 73.9%,84.3% 11.3%,85.7% 63.7%,87.1% 56.5%,88.6% 30.8%,90.0% 53.3%,91.4% 46.5%,92.9% 41.8%,94.3% 30.4%,95.7% 12.6%,97.1% 38.1%,98.6% 62.5%,100.0% 38.8%,100.0% 100.0%);
+  --tear-b:polygon(0.0% 100.0%,0.0% 53.5%,1.1% 54.4%,2.2% 73.2%,3.3% 25.9%,4.4% 64.5%,5.6% 48.7%,6.7% 59.8%,7.8% 16.1%,8.9% 31.2%,10.0% 31.1%,11.1% 63.6%,12.2% 23.9%,13.3% 52.6%,14.4% 27.5%,15.6% 68.1%,16.7% 62.0%,17.8% 48.1%,18.9% 64.9%,20.0% 32.8%,21.1% 54.7%,22.2% 69.4%,23.3% 18.3%,24.4% 61.8%,25.6% 40.7%,26.7% 73.0%,27.8% 21.6%,28.9% 54.3%,30.0% 58.5%,31.1% 58.7%,32.2% 27.0%,33.3% 33.7%,34.4% 61.7%,35.6% 51.3%,36.7% 64.8%,37.8% 36.4%,38.9% 54.7%,40.0% 66.6%,41.1% 60.6%,42.2% 30.8%,43.3% 30.5%,44.4% 32.3%,45.6% 51.4%,46.7% 46.0%,47.8% 62.8%,48.9% 46.9%,50.0% 52.6%,51.1% 69.1%,52.2% 23.1%,53.3% 55.1%,54.4% 62.7%,55.6% 53.7%,56.7% 29.8%,57.8% 42.0%,58.9% 53.3%,60.0% 38.7%,61.1% 43.2%,62.2% 55.0%,63.3% 40.4%,64.4% 35.8%,65.6% 46.2%,66.7% 71.2%,67.8% 27.5%,68.9% 44.9%,70.0% 60.0%,71.1% 56.0%,72.2% 25.0%,73.3% 30.4%,74.4% 51.4%,75.6% 45.7%,76.7% 35.7%,77.8% 42.3%,78.9% 44.8%,80.0% 62.8%,81.1% 27.0%,82.2% 33.4%,83.3% 64.3%,84.4% 71.0%,85.6% 11.1%,86.7% 55.4%,87.8% 47.7%,88.9% 48.1%,90.0% 50.2%,91.1% 73.2%,92.2% 42.5%,93.3% 47.6%,94.4% 20.8%,95.6% 41.3%,96.7% 18.3%,97.8% 35.0%,98.9% 21.7%,100.0% 67.9%,100.0% 100.0%);
+  --tear-z:polygon(0.0% 100.0%,0.0% 28.3%,2.3% 90.9%,4.5% 27.6%,6.8% 71.8%,9.1% 21.0%,11.4% 79.3%,13.6% 19.7%,15.9% 72.9%,18.2% 12.2%,20.5% 79.8%,22.7% 12.9%,25.0% 80.0%,27.3% 8.5%,29.5% 71.9%,31.8% 23.6%,34.1% 79.3%,36.4% 19.3%,38.6% 86.2%,40.9% 15.9%,43.2% 71.3%,45.5% 25.2%,47.7% 83.0%,50.0% 22.5%,52.3% 83.7%,54.5% 29.4%,56.8% 78.0%,59.1% 24.7%,61.4% 78.1%,63.6% 20.6%,65.9% 84.5%,68.2% 14.9%,70.5% 71.9%,72.7% 18.4%,75.0% 85.8%,77.3% 21.0%,79.5% 79.8%,81.8% 22.1%,84.1% 74.0%,86.4% 11.9%,88.6% 77.1%,90.9% 25.9%,93.2% 74.3%,95.5% 10.5%,97.7% 72.2%,100.0% 8.9%,100.0% 100.0%);
+}
+/* Sync it — Musical Events.
+   The page is a hall of six rooms. Each room borrows its poster's palette, type, torn-paper edges and drawn details. */
+body.events { background: var(--ink); overflow-x: hidden; }
+.events h1, .events h2, .events h3 { text-wrap: balance; }
+
+/* ---------- hero: a wall of posters drifting past ---------- */
+.ev-hero { position: relative; min-height: 100vh; min-height: 100svh; display: grid; place-items: center; overflow: hidden; background: var(--ink); isolation: isolate; }
+.ev-wall { position: absolute; inset: -8% -6%; display: grid; align-content: center; gap: clamp(10px, 2vw, 22px); transform: rotate(-5deg); opacity: .5; direction: ltr; z-index: 0; }
+.ev-wall__row { display: flex; gap: clamp(10px, 2vw, 22px); width: max-content; animation: wall 80s linear infinite; }
+.ev-wall__row--r { animation-direction: reverse; animation-duration: 95s; }
+.ev-wall img { height: clamp(190px, 33vh, 350px); width: auto; display: block; border-radius: 4px; box-shadow: 0 14px 30px rgba(0, 0, 0, .5); }
+@keyframes wall { to { transform: translateX(-50%); } }
+.ev-hero__shade { position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse 60% 55% at 50% 50%, rgba(var(--ink-rgb), .82), rgba(var(--ink-rgb), .35) 75%), linear-gradient(180deg, rgba(var(--ink-rgb), .6), rgba(var(--ink-rgb), 0) 30%, rgba(var(--ink-rgb), .35) 75%, var(--forest)); }
+.ev-hero__copy { position: relative; z-index: 2; display: grid; justify-items: center; gap: 14px; text-align: center; padding: 110px var(--gutter) 90px; }
+.ev-hero__script { font: 400 clamp(26px, 3.4vw, 42px)/1.1 var(--f-script); color: var(--gold-soft); }
+html[lang="ar"] .ev-hero__script { font-family: var(--f-display); font-size: clamp(20px, 2.4vw, 28px); }
+.ev-hero h1 { display: grid; font: 500 clamp(54px, 11vw, 160px)/.92 var(--f-display); letter-spacing: -.015em; text-shadow: 0 4px 40px rgba(0, 0, 0, .55); }
+.ev-hero h1 span:last-child { font-style: italic; color: var(--gold-soft); }
+html[lang="ar"] .ev-hero h1 { font-weight: 600; line-height: 1.2; letter-spacing: 0; }
+html[lang="ar"] .ev-hero h1 span:last-child { font-style: normal; }
+.ev-hero__sub { max-width: 44ch; font-size: 18px; color: rgba(var(--cream-rgb), .9); text-shadow: 0 1px 14px rgba(0, 0, 0, .7); }
+.ev-hero__cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px; }
+
+/* ---------- the poster lists ---------- */
+.ev-list { background: var(--forest); padding: clamp(70px, 9vw, 120px) var(--gutter) clamp(90px, 10vw, 140px); position: relative; }
+.ev-list--past { background: #1b1510; }
+.ev-list__head { display: grid; gap: 10px; justify-items: center; text-align: center; }
+.ev-list h2 { font: italic 500 clamp(34px, 5vw, 60px)/1.08 var(--f-display); }
+html[lang="ar"] .ev-list h2 { font-style: normal; font-weight: 600; line-height: 1.3; }
+.ev-list__head p { color: rgba(var(--cream-rgb), .8); max-width: 40ch; }
+.ev-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(22px, 3vw, 44px); max-width: 1320px; margin: clamp(34px, 5vw, 60px) auto 0; }
+.ev-card { display: grid; gap: 8px; width: clamp(150px, 17vw, 224px); text-decoration: none; text-align: center; transition: transform .5s var(--ease); align-content: start; }
+.ev-card:nth-child(odd) { transform: rotate(-1.6deg); } .ev-card:nth-child(even) { transform: rotate(1.4deg); }
+.ev-card:hover, .ev-card:focus-visible { transform: translateY(-10px) rotate(0); }
+.ev-card__img { display: block; padding: 6px; background: var(--cream); border-radius: 3px; box-shadow: 0 18px 34px rgba(0, 0, 0, .5); }
+.ev-card__img { background: var(--cream); } .ev-card__img img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: contain; background: var(--cream); }
+.ev-card__name { font: italic 500 20px/1.2 var(--f-display); margin-top: 6px; }
+html[lang="ar"] .ev-card__name { font-style: normal; font-weight: 600; font-size: 19px; }
+.ev-card__date { font-size: 14px; color: var(--gold-soft); }
+@media (max-width: 700px) {
+  .ev-cards { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; scroll-snap-type: x mandatory; padding: 14px 4px 24px; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); scrollbar-width: none; }
+  .ev-card { flex: 0 0 156px; scroll-snap-align: center; }
+  .ev-list--past .ev-cards { justify-content: center; }
+}
+
+/* ---------- little poster-coloured dots that follow you down the hall ---------- */
+.ev-dots { position: fixed; inset-inline-end: 12px; top: 50%; transform: translateY(-50%); z-index: 40; display: grid; gap: 4px; opacity: 0; pointer-events: none; transition: opacity .4s; }
+.ev-dots.is-show { opacity: 1; pointer-events: auto; }
+.ev-dots a { width: 26px; height: 26px; display: grid; place-items: center; }
+.ev-dots i { width: 11px; height: 11px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 2px rgba(0, 0, 0, .55); transition: transform .35s var(--ease); }
+.ev-dots a:hover i, .ev-dots a.is-on i { transform: scale(1.7); }
+@media (max-width: 899px) { .ev-dots { display: none; } }
+.hdr.is-solid { box-shadow: 0 1px 0 var(--room-accent, rgba(var(--gold-rgb), .22)); }
+.ev-lb { border: 0; padding: 0; background: transparent; max-width: 94vw; max-height: 94vh; overflow: visible; }
+.ev-lb::backdrop { background: rgba(8, 4, 4, .88); }
+.ev-lb img { display: block; max-width: 92vw; max-height: 90vh; border-radius: 10px; }
+.ev-lb__x { position: absolute; top: -14px; inset-inline-end: -14px; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--cream); background: var(--ink); color: var(--cream); z-index: 2; }
+
+/* ---------- a room ---------- */
+.room { position: relative; color: var(--r-txt); background: var(--r-bgimg, var(--r-bg)); font-family: var(--f-b); isolation: isolate; scroll-margin-top: 0; }
+.room ::selection { background: var(--r-acc); color: var(--r-ink); }
+.room__tear { position: absolute; left: 0; right: 0; top: -26px; height: 26px; background: var(--r-paper); clip-path: var(--tear-a); z-index: 6; pointer-events: none; }
+.room__tear::after { content: ""; position: absolute; inset: 6px 0 0; background: var(--r-bg); clip-path: var(--tear-a); }
+.room--zara .room__tear, .room--rosalia .room__tear { clip-path: none; background: radial-gradient(circle at 50% 100%, var(--r-bg) 0 14px, transparent 15px) 0 0 / 34px 26px repeat-x, radial-gradient(circle at 50% 100%, var(--r-paper) 0 19px, transparent 20px) 0 0 / 34px 26px repeat-x; }
+.room--zara .room__tear::after, .room--rosalia .room__tear::after { display: none; }
+.room--charli .room__tear { clip-path: var(--tear-z); }
+.room--charli .room__tear::after { clip-path: var(--tear-z); }
+
+.room__hero { position: relative; min-height: min(100svh, 960px); display: grid; place-items: center; overflow: hidden; padding: clamp(96px, 12vw, 140px) var(--gutter) clamp(74px, 9vw, 120px); }
+.room__hero::before { content: ""; position: absolute; inset: 0 0 auto; height: 120px; background: linear-gradient(var(--r-bg), transparent); z-index: 2; pointer-events: none; }
+.room__vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% var(--vy, 30%); z-index: 0; background: var(--r-bg); }
+.room--bjork { --vy: 36%; } .room--charli { --vy: 58%; } .room--zara { --vy: 26%; } .room--rosalia { --vy: 64%; } .room--grimes { --vy: 34%; } .room--reem { --vy: 30%; }
+.room__shade { position: absolute; inset: 0; z-index: 1; background: var(--r-shade); }
+.room__deco { position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: hidden; }
+.dc { position: absolute; display: block; height: auto; overflow: visible; }
+.room__title { position: relative; z-index: 3; display: grid; justify-items: center; gap: 14px; text-align: center; max-width: 1100px; }
+.room__tag { padding: .22em 1em; border-radius: 999px; background: var(--r-paper); color: var(--r-ink); font: 600 13px/1.5 var(--f-b); }
+.room__h { display: grid; justify-items: center; margin: 0; filter: drop-shadow(0 14px 18px rgba(0, 0, 0, .35)); font-weight: 400; }
+.room__name, .room__night { display: block; }
+.room__host { font: 500 17px/1.3 var(--f-b); color: var(--r-txt); text-shadow: 0 1px 14px rgba(0, 0, 0, .8); }
+.room__date { padding: .3em .95em; background: var(--r-acc); color: var(--r-ink); font: 700 clamp(17px, 2.2vw, 24px)/1.3 var(--f-b); transform: rotate(-1.5deg); clip-path: var(--tornb); }
+.room__cta, .songs__btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.songs__btns { justify-content: flex-start; }
+.room__cta { margin-top: 8px; }
+.rbtn { display: inline-flex; align-items: center; justify-content: center; padding: .72em 1.5em; border-radius: 999px; background: var(--r-acc); color: var(--r-ink); border: 2px solid var(--r-acc); font: 700 15px/1.2 var(--f-b); text-decoration: none; cursor: pointer; transition: transform .3s var(--ease), background .3s, color .3s; }
+.rbtn:hover { transform: translateY(-2px) rotate(-1deg); }
+.rbtn--alt { background: rgba(0, 0, 0, .25); color: var(--r-txt); border-color: currentColor; }
+.rbtn--alt:hover { background: var(--r-txt); color: var(--r-bg); }
+@keyframes slap { from { opacity: 0; transform: translateY(-46px) scale(1.2) rotate(calc(var(--rot, -2deg) * 3)); } }
+.room.is-in .room__name { animation: slap .7s var(--ease) both; }
+.room.is-in .room__night { animation: slap .7s var(--ease) .16s both; }
+.room__name { transform: rotate(var(--rot, -2deg)); }
+.room__night { transform: rotate(var(--rot2, 2deg)); }
+
+.room__body { position: relative; padding: clamp(64px, 8vw, 116px) max(var(--gutter), calc((100% - 1240px) / 2)); display: grid; grid-template-columns: minmax(240px, 380px) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: start; scroll-margin-top: 60px; }
+.room__body::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 28px; background: var(--r-div); clip-path: var(--tear-b); transform: scaleY(-1); z-index: 1; }
+.room__poster { margin: 0; position: relative; transform: rotate(-2deg); transition: transform .5s var(--ease); }
+.room__poster:hover { transform: rotate(0) scale(1.02); }
+.room__poster .pz { all: unset; display: block; cursor: zoom-in; }
+.room__poster .pz:focus-visible { outline: 2px solid var(--r-acc); outline-offset: 6px; }
+.room__poster img { display: block; width: 100%; height: auto; box-shadow: 0 24px 50px rgba(0, 0, 0, .5); }
+.room__about { display: grid; grid-template-columns: minmax(150px, 250px) minmax(0, 1fr); gap: clamp(22px, 3.4vw, 46px); align-items: start; }
+.room__portrait { margin: 0; position: relative; }
+.room__portrait img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 22%; }
+.room__txt { display: grid; gap: 16px; align-content: start; }
+.room__txt h3 { font: 400 clamp(26px, 3.4vw, 42px)/1.1 var(--f-h); }
+.room__bio { font-size: 18px; line-height: 1.7; max-width: 56ch; }
+.room__links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.lnk { display: inline-flex; align-items: center; gap: 9px; padding: .55em 1.05em .55em .85em; border-radius: 999px; background: var(--r-acc); color: var(--r-ink); text-decoration: none; font: 700 15px/1.2 var(--f-b); transition: transform .3s var(--ease); }
+.lnk:hover { transform: translateY(-2px) rotate(-1deg); }
+.lnk svg { width: 20px; height: 20px; flex: none; }
+.lnk small { font-size: 12.5px; font-weight: 500; opacity: .8; }
+
+/* ---------- the songs ---------- */
+.room__songs { position: relative; padding: clamp(20px, 4vw, 50px) max(var(--gutter), calc((100% - 1240px) / 2)) clamp(100px, 11vw, 150px); display: grid; gap: clamp(24px, 3vw, 40px); scroll-margin-top: 60px; }
+.songs__head { display: grid; gap: 10px; max-width: 62ch; justify-items: start; }
+.songs__head h3 { font: 400 clamp(32px, 4.6vw, 60px)/1.05 var(--f-h); }
+.songs__head p { opacity: .9; }
+.songs__meta { font-weight: 700; color: var(--r-acc); opacity: 1 !important; }
+.songs__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: start; }
+.songs__grid:has(.spot:not([hidden])) { grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr); }
+.spot { position: sticky; top: 90px; border-radius: 14px; overflow: hidden; background: #000; box-shadow: 0 18px 40px rgba(0, 0, 0, .45); }
+.spot iframe { display: block; width: 100%; border: 0; }
+.tl { list-style: none; margin: 0; padding: 0; display: grid; align-content: start; }
+.tr { display: grid; grid-template-columns: 2.3em minmax(0, 1fr) auto 1.3em; gap: 14px; align-items: center; padding: 13px 10px; text-decoration: none; color: inherit; border-bottom: 1px solid var(--r-line); transition: background .25s, padding .25s; }
+.tr:hover, .tr:focus-visible { background: var(--r-hover); padding-inline: 18px; }
+.tr__n { font: 700 15px/1 var(--f-b); color: var(--r-acc); font-variant-numeric: tabular-nums; }
+.tr__m { display: grid; gap: 1px; min-width: 0; }
+.tr__m b { font: 700 17px/1.25 var(--f-b); overflow-wrap: anywhere; }
+.tr__m i { font-style: normal; font-size: 13.5px; opacity: .74; overflow-wrap: anywhere; }
+.tr__t { font-size: 14px; opacity: .85; font-variant-numeric: tabular-nums; }
+.tr__p { width: 18px; height: 18px; fill: var(--r-acc); opacity: 0; transition: opacity .25s; }
+[dir="rtl"] .tr__p { transform: scaleX(-1); }
+.tr:hover .tr__p, .tr:focus-visible .tr__p { opacity: 1; }
+@media (hover: none) { .tr__p { opacity: .55; } }
+
+/* ---------- Björk: crimson paper, orchids, ice, circuit lines ---------- */
+.room--bjork { --r-bg: #7a0d2b; --r-bgimg: linear-gradient(180deg, #7a0d2b, #5a0920 55%, #4a0719); --r-paper: #f2e4c6; --r-ink: #3b0514; --r-acc: #d5e83a; --r-txt: #f6ead0; --r-line: rgba(243, 228, 198, .18); --r-hover: rgba(213, 232, 58, .1); --r-div: #a8d3ec;
+  --r-shade: linear-gradient(180deg, rgba(60, 6, 22, .4), rgba(60, 6, 22, .22) 45%, rgba(40, 4, 14, .72)); --f-h: "Bowlby One", "Archivo Black", sans-serif; --f-b: "Jost", sans-serif; --rot: -3deg; --rot2: -2deg; }
+.room--bjork .room__name { background: var(--r-paper); color: #8a0f2e; padding: .2em .36em .15em; clip-path: var(--torn1); font: 400 clamp(60px, 12vw, 176px)/1 var(--f-h); }
+.room--bjork .room__night { background: #8a0f2e; color: var(--r-paper); border: 3px solid var(--r-paper); padding: .04em .5em; margin-top: -.12em; margin-inline-start: 24%; font: 400 clamp(32px, 6.4vw, 90px)/1.12 var(--f-h); font-style: normal; }
+.room--bjork .room__night { transform: rotate(var(--rot2)) skewX(-6deg); }
+.room--bjork .room__date { background: var(--r-acc); }
+.room--bjork .room__txt { background: var(--r-paper); color: var(--r-ink); padding: clamp(22px, 3vw, 36px); clip-path: var(--torn2); }
+.room--bjork .room__txt h3 { color: #8a0f2e; }
+.room--bjork .lnk { background: #8a0f2e; color: var(--r-paper); }
+.room--bjork .room__portrait img { border-radius: 50%; aspect-ratio: 1; border: 6px solid #a8d3ec; box-shadow: 0 0 0 5px #d5e83a, 0 20px 40px rgba(0, 0, 0, .45); }
+.room--bjork .room__poster { padding: 8px; background: var(--r-paper); }
+.room--bjork .songs__head h3 { color: var(--r-paper); text-shadow: 3px 3px 0 #8a0f2e, 5px 5px 0 rgba(0, 0, 0, .25); }
+
+/* Björk's countdown: torn paper tiles, ice crystals between them */
+.bj-cd { display: grid; justify-items: center; gap: 8px; margin-top: 6px; }
+.bj-cd__row { display: flex; align-items: flex-start; gap: clamp(6px, 1.6vw, 18px); }
+.bj-cd__row[hidden], .bj-cd__live[hidden], .bj-cd__over[hidden] { display: none; }
+.bj-t { display: grid; justify-items: center; gap: 6px; }
+.bj-t b { display: grid; place-items: center; min-width: clamp(64px, 11vw, 124px); padding: .22em .2em .26em; background: var(--r-paper); color: #8a0f2e; font: 400 clamp(34px, 6.4vw, 78px)/1 var(--f-h); font-variant-numeric: tabular-nums; clip-path: var(--torn3); transform: rotate(-2deg); filter: drop-shadow(0 8px 0 rgba(0, 0, 0, .25)); }
+.bj-t:nth-child(3) b { transform: rotate(1.6deg); } .bj-t:nth-child(5) b { transform: rotate(-1deg); } .bj-t:nth-child(7) b { transform: rotate(2.2deg); }
+.bj-t i { font: 600 14px/1 var(--f-b); font-style: normal; color: var(--r-acc); text-shadow: 0 1px 8px rgba(40, 4, 14, .9); }
+.bj-sep { align-self: center; width: clamp(12px, 2vw, 22px); margin-top: -22px; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .4)); }
+.bj-sep svg { display: block; width: 100%; height: auto; }
+.bj-cd__live, .bj-cd__over { font: 400 clamp(34px, 6vw, 72px)/1.1 var(--f-h); color: var(--r-acc); text-shadow: 3px 3px 0 #8a0f2e; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+
+/* ---------- Charli XCX: photocopied black and white, lime spray ---------- */
+.room--charli { --r-bg: #0a0a0a; --r-paper: #ece6d8; --r-ink: #0a0a0a; --r-acc: #b6ff00; --r-txt: #efeae0; --r-line: rgba(239, 234, 224, .16); --r-hover: rgba(182, 255, 0, .09); --r-div: #b6ff00;
+  --r-shade: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .32) 50%, rgba(0, 0, 0, .8)); --f-h: "Anton", Impact, sans-serif; --f-b: "Archivo", sans-serif; --rot: -1.5deg; --rot2: 2deg; }
+.room--charli .room__vid { filter: grayscale(1) contrast(1.15) brightness(.9); }
+.room--charli .room__name { background: var(--r-paper); color: #0a0a0a; padding: .02em .22em .07em; clip-path: var(--torn3); font: 400 clamp(72px, 15vw, 232px)/.95 var(--f-h); }
+.room--charli .room__night { background: #b6ff00; color: #0a0a0a; padding: 0 .35em; margin-top: -.08em; margin-inline-start: 34%; font: 400 clamp(40px, 8vw, 124px)/1.05 var(--f-h); clip-path: var(--tornb); }
+.room--charli .room__night { transform: rotate(var(--rot2)) skewX(-8deg); }
+.room--charli .rbtn, .room--charli .lnk { border-radius: 0; clip-path: var(--tornb); border: 0; }
+.room--charli .room__poster::before { content: ""; position: absolute; top: -14px; left: 28%; width: 120px; height: 32px; background: rgba(182, 255, 0, .88); transform: rotate(-5deg); z-index: 2; }
+.room--charli .room__portrait { padding: 10px 10px 34px; background: var(--r-paper); clip-path: var(--torn2); transform: rotate(2deg); }
+.room--charli .room__portrait img { filter: grayscale(1) contrast(1.25); }
+.room--charli .room__txt h3 { justify-self: start; background: #b6ff00; color: #0a0a0a; padding: .05em .4em; clip-path: var(--tornb); transform: rotate(-1deg); }
+.room--charli .songs__head h3 { background: var(--r-paper); color: #0a0a0a; padding: .02em .3em .06em; clip-path: var(--torn3); transform: rotate(-1deg); }
+.room--charli .tr__m b { font-weight: 800; letter-spacing: .01em; }
+
+/* ---------- Zara Larsson: sunny coral, daisies, rainbow ---------- */
+.room--zara { --r-bg: #f4958d; --r-bgimg: linear-gradient(180deg, #f7a89a 0, #ee6b7a 36%, #e4546d 100%); --r-paper: #fbeedb; --r-ink: #9c1235; --r-acc: #f7cf3b; --r-txt: #fff4e2; --r-line: rgba(156, 18, 53, .16); --r-hover: rgba(238, 107, 122, .14); --r-div: #fbeedb;
+  --r-shade: linear-gradient(180deg, rgba(255, 170, 150, .16), rgba(160, 20, 60, .26) 55%, rgba(110, 10, 40, .6)); --f-h: "Shrikhand", cursive; --f-b: "Quicksand", sans-serif; --rot: -2deg; --rot2: 3deg; }
+.room--zara .room__name { background: var(--r-paper); color: #b3173f; padding: .12em .5em .22em; border-radius: 44% 56% 48% 52% / 58% 46% 54% 42%; box-shadow: 0 10px 0 rgba(156, 18, 53, .28); font: 400 clamp(52px, 10vw, 142px)/1.02 var(--f-h); }
+.room--zara .room__night { color: var(--r-paper); text-shadow: 3px 3px 0 #b3173f, 6px 6px 0 rgba(156, 18, 53, .3); margin-top: -.1em; font: 400 clamp(40px, 7vw, 100px)/1.1 var(--f-h); }
+.room--zara .room__date { border-radius: 999px; clip-path: none; box-shadow: 0 5px 0 #d9951e; }
+.room--zara .room__poster { padding: 10px; background: var(--r-paper); border-radius: 16px; }
+.room--zara .room__poster img { border-radius: 8px; }
+.room--zara .room__portrait img { border-radius: 999px 999px 18px 18px / 160px 160px 18px 18px; border: 8px solid var(--r-paper); box-shadow: 0 0 0 5px #f7cf3b, 0 16px 30px rgba(120, 10, 40, .35); }
+.room--zara .room__txt { background: var(--r-paper); color: #7e0f2d; padding: clamp(22px, 3vw, 36px); border-radius: 30px; box-shadow: 0 10px 0 rgba(156, 18, 53, .2); }
+.room--zara .room__txt h3 { color: #b3173f; }
+.room--zara .lnk { background: #b3173f; color: var(--r-paper); }
+.room--zara .songs__head h3 { color: var(--r-paper); text-shadow: 3px 3px 0 #b3173f; }
+.room--zara .songs__meta { color: #fff1a8; text-shadow: 0 1px 6px rgba(120, 10, 40, .5); }
+.room--zara .tl { background: var(--r-paper); color: #7e0f2d; border-radius: 26px; padding: 8px 20px; box-shadow: 0 10px 0 rgba(156, 18, 53, .22); }
+.room--zara .tr__n, .room--zara .tr__p { color: #d9791a; fill: #d9791a; }
+.room--zara .rbtn--alt { background: rgba(156, 18, 53, .35); }
+
+/* ---------- Rosalía: red leather, gold halo, lace ---------- */
+.room--rosalia { --r-bg: #8e0f17; --r-bgimg: linear-gradient(180deg, #8e0f17 0, #4a070c 38%, #0d0707 72%); --r-paper: #efdcc0; --r-ink: #2a0508; --r-acc: #d4ab55; --r-txt: #f1e2c8; --r-line: rgba(212, 171, 85, .26); --r-hover: rgba(212, 171, 85, .09); --r-div: #d4ab55;
+  --r-shade: linear-gradient(180deg, rgba(80, 4, 10, .42), rgba(30, 2, 5, .3) 55%, rgba(10, 2, 4, .85)); --f-h: "Playfair Display", Georgia, serif; --f-b: "Cormorant Garamond", Georgia, serif; --rot: -2deg; --rot2: -1.5deg; }
+.room--rosalia .room__name { color: var(--r-paper); font: italic 900 clamp(64px, 13vw, 194px)/.95 var(--f-h); text-shadow: 0 6px 34px rgba(0, 0, 0, .55); }
+.room--rosalia .room__night { position: relative; background: var(--r-paper); color: #0d0707; padding: 0 .5em; margin-top: -.05em; font: 400 clamp(34px, 6vw, 86px)/1.15 "Racing Sans One", var(--f-h); }
+.room--rosalia .room__night { transform: rotate(var(--rot2)) skewX(-8deg); }
+.room--rosalia .room__night::after { content: ""; position: absolute; inset-inline-end: -1.8em; top: 12%; bottom: 12%; width: 1.8em; background: conic-gradient(#0d0707 25%, var(--r-paper) 0 50%, #0d0707 0 75%, var(--r-paper) 0) 0 0 / 14px 14px; }
+.room--rosalia .room__date { background: transparent; color: var(--r-acc); clip-path: none; box-shadow: inset 0 -2px 0 var(--r-acc), inset 0 2px 0 var(--r-acc); font-weight: 700; }
+.room--rosalia .room__host, .room--rosalia .room__bio, .room--rosalia .tr__m i { font-size: 1.12em; }
+.room--rosalia .room__bio { font-size: 21px; }
+.room--rosalia .room__tag { background: var(--r-acc); }
+.room--rosalia .room__poster { padding: 8px; background: #0d0707; border: 3px solid var(--r-acc); outline: 1px solid var(--r-acc); outline-offset: 5px; }
+.room--rosalia .room__portrait img { border-radius: 999px 999px 6px 6px / 150px 150px 6px 6px; border: 4px solid var(--r-acc); box-shadow: 0 0 0 7px #0d0707, 0 0 0 9px var(--r-acc); }
+.room--rosalia .room__txt h3 { font-style: italic; font-weight: 700; color: var(--r-acc); }
+.room--rosalia .lnk { background: transparent; color: var(--r-acc); border: 1.5px solid var(--r-acc); }
+.room--rosalia .lnk:hover { background: var(--r-acc); color: #1a0306; }
+.room--rosalia .rbtn { background: transparent; color: var(--r-acc); border-color: var(--r-acc); font-family: var(--f-b); font-size: 17px; }
+.room--rosalia .rbtn:hover { background: var(--r-acc); color: #1a0306; }
+.room--rosalia .songs__head h3 { font-style: italic; font-weight: 900; color: var(--r-paper); }
+.room--rosalia .tr__m b { font: 700 21px/1.2 var(--f-b); }
+.room--rosalia .tr__n { font-family: var(--f-h); font-style: italic; font-size: 17px; }
+
+/* ---------- Grimes: lavender ruins, mint wings, typewriter ---------- */
+.room--grimes { --r-bg: #3a2f52; --r-bgimg: linear-gradient(180deg, #3a2f52 0, #241f31 46%, #16131d 100%); --r-paper: #efe5cf; --r-ink: #1d1a26; --r-acc: #8fd9b6; --r-txt: #efe5cf; --r-line: rgba(185, 160, 227, .26); --r-hover: rgba(143, 217, 182, .09); --r-div: #b9a0e3;
+  --r-shade: linear-gradient(180deg, rgba(40, 28, 70, .5), rgba(20, 16, 30, .42) 55%, rgba(10, 8, 16, .86)); --f-h: "Permanent Marker", cursive; --f-b: "Special Elite", "Courier New", monospace; --rot: -3deg; --rot2: 2deg; }
+.room--grimes .room__name { background: #0e0c14; color: var(--r-paper); padding: .05em .3em .1em; clip-path: var(--torn1); font: 400 clamp(60px, 12.5vw, 184px)/1.05 var(--f-h); }
+.room--grimes .room__night { background: #b9a0e3; color: #0e0c14; padding: 0 .45em; margin-top: -.06em; margin-inline-start: 30%; clip-path: var(--tornb); font: 400 clamp(36px, 7vw, 104px)/1.1 var(--f-h); }
+.room--grimes .room__date { background: var(--r-acc); }
+.room--grimes .room__bio { font-size: 16.5px; line-height: 1.75; }
+.room--grimes .room__txt { background: rgba(14, 12, 20, .62); border: 1.5px solid #b9a0e3; padding: clamp(22px, 3vw, 34px); border-radius: 4px; box-shadow: 8px 8px 0 rgba(185, 160, 227, .35); }
+.room--grimes .room__txt h3 { color: var(--r-acc); }
+.room--grimes .lnk { background: #b9a0e3; color: #0e0c14; }
+.room--grimes .room__poster { padding: 8px; background: var(--r-paper); }
+.room--grimes .room__portrait img { border-radius: 50% / 40%; border: 5px solid #b9a0e3; box-shadow: 0 0 0 5px #0e0c14, 0 0 0 8px var(--r-acc); }
+.room--grimes .songs__head h3 { background: #0e0c14; color: var(--r-paper); padding: .02em .3em .08em; clip-path: var(--torn3); transform: rotate(-1deg); }
+.room--grimes .tr__m b { font-weight: 400; font-size: 17.5px; }
+
+/* ---------- Reem Baqeri: cobalt halftone, sticker stars ---------- */
+.room--reem { --r-bg: #3566d6; --r-bgimg: linear-gradient(180deg, #3566d6, #2a56bf 50%, #1f43a3); --r-paper: #fff; --r-ink: #0d0d0d; --r-acc: #f5c518; --r-txt: #fff; --r-line: rgba(255, 255, 255, .26); --r-hover: rgba(245, 197, 24, .14); --r-div: #f5c518;
+  --r-shade: linear-gradient(180deg, rgba(20, 40, 120, .45), rgba(20, 40, 120, .28) 50%, rgba(10, 20, 70, .76)); --f-h: "Oswald", sans-serif; --f-b: "Barlow", sans-serif; --rot: -2deg; --rot2: 1.5deg; }
+.room--reem .room__title::before { content: "Sync it"; order: -1; font: 400 clamp(40px, 6vw, 74px)/1 var(--f-script); color: #0d0d0d; -webkit-text-stroke: 9px #e1432f; paint-order: stroke fill; text-shadow: 0 0 0 #fff; filter: drop-shadow(0 0 0 #fff) drop-shadow(0 4px 0 rgba(0, 0, 0, .25)); }
+.room--reem .room__name { color: #fff; font: 400 clamp(54px, 11vw, 160px)/1.02 "Permanent Marker", var(--f-h); text-shadow: -3px 0 #0d0d0d, 3px 0 #0d0d0d, 0 -3px #0d0d0d, 0 3px #0d0d0d, 6px 7px 0 #e1432f; }
+.room--reem .room__night { color: #f5c518; text-transform: uppercase; font: 700 clamp(26px, 5.2vw, 76px)/1.1 var(--f-h); text-shadow: -2px 0 #0d0d0d, 2px 0 #0d0d0d, 0 -2px #0d0d0d, 0 2px #0d0d0d, 4px 5px 0 #0d0d0d; margin-top: .1em; }
+.room--reem .room__date { background: #e1432f; color: #fff; clip-path: none; border-radius: 4px; }
+.room--reem .room__poster { padding: 8px; background: #fff; box-shadow: 8px 8px 0 #0d0d0d; }
+.room--reem .room__portrait { padding: 8px; background: #fff; border-radius: 22px; outline: 5px solid #e1432f; outline-offset: -1px; box-shadow: 0 0 0 7px #fff, 8px 12px 0 7px rgba(0, 0, 0, .4); transform: rotate(-3deg); }
+.room--reem .room__portrait img { border-radius: 14px; }
+.room--reem .room__txt h3 { text-transform: uppercase; font-weight: 700; color: #f5c518; text-shadow: 3px 3px 0 #0d0d0d; letter-spacing: .01em; }
+.room--reem .lnk { background: #fff; color: #0d0d0d; border: 2px solid #0d0d0d; box-shadow: 4px 4px 0 #0d0d0d; }
+.room--reem .rbtn { border-color: #0d0d0d; box-shadow: 4px 4px 0 #0d0d0d; }
+.room--reem .songs__head h3 { text-transform: uppercase; color: #f5c518; text-shadow: 3px 3px 0 #0d0d0d; }
+.room--reem .tl { background: #fff; color: #0d0d0d; padding: 10px 22px; clip-path: var(--torn2); transform: rotate(-.5deg); }
+.room--reem .tr__n, .room--reem .tr__p { color: #e1432f; fill: #e1432f; }
+.room--reem .tr { border-color: rgba(13, 13, 13, .16); }
+.room--reem .tr:hover { background: rgba(245, 197, 24, .3); }
+
+/* ---------- Arabic ---------- */
+html[lang="ar"] .room { --f-h: "Reem Kufi", serif; --f-b: "Tajawal", sans-serif; }
+html[lang="ar"] .room__name, html[lang="ar"] .room__night, html[lang="ar"] .room h3, html[lang="ar"] .room__host { font-style: normal; text-transform: none; letter-spacing: 0; }
+html[lang="ar"] .room__name { font-weight: 700; line-height: 1.25; }
+html[lang="ar"] .room__night { font-weight: 700; line-height: 1.3; }
+html[lang="ar"] .room--reem .room__title::before { display: none; }
+html[lang="ar"] .room--grimes, html[lang="ar"] .room--rosalia { --f-b: "Tajawal", sans-serif; }
+html[lang="ar"] .room--rosalia .room__bio, html[lang="ar"] .room--rosalia .tr__m b { font-size: 18px; }
+html[lang="ar"] .room--rosalia .room__night::after { inset-inline-end: auto; inset-inline-start: -1.8em; }
+html[lang="ar"] .bj-t b { font-family: "Reem Kufi", serif; font-weight: 700; }
+
+/* ---------- small screens ---------- */
+@media (max-width: 899px) {
+  .room__body { grid-template-columns: 1fr; }
+  .room__poster { max-width: 340px; margin-inline: auto; }
+  .songs__grid:has(.spot:not([hidden])) { grid-template-columns: 1fr; }
+  .spot { position: static; }
+}
+@media (max-width: 620px) {
+  .room__about { grid-template-columns: 1fr; }
+  .room__portrait { max-width: 230px; }
+  .room--bjork .room__night, .room--charli .room__night, .room--grimes .room__night { margin-inline-start: 6%; }
+  .tr { grid-template-columns: 2em minmax(0, 1fr) auto; }
+  .tr__p { display: none; }
+  .bj-t b { min-width: 58px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ev-wall__row { animation: none; }
+  .room.is-in .room__name, .room.is-in .room__night { animation: none; }
+}
+.tl { max-width: 980px; }
+.spot.is-msg { background: transparent; box-shadow: none; }
+.spot__msg { padding: 18px 20px; border: 1.5px dashed currentColor; border-radius: 14px; font-size: 15.5px; }
+.spot__msg[hidden] { display: none; }
+
+/* ---------- Get tickets: one ticket stub per night, dressed in that night's colours ---------- */
+.rbtn--tix { --tx-bg: var(--r-acc); --tx-fg: var(--r-ink); --tx-sh: rgba(0, 0, 0, .3); position: relative; isolation: isolate; gap: .7em; padding: .85em 2em; border: 0; border-radius: 0; background: none; color: var(--tx-fg); font-size: 16px; letter-spacing: .02em; clip-path: none; filter: drop-shadow(0 6px 0 var(--tx-sh)); transition: transform .3s var(--ease), filter .3s var(--ease); }
+.rbtn--tix::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: var(--tx-r, 10px);
+  background: linear-gradient(100deg, transparent 38%, rgba(255, 255, 255, .55) 50%, transparent 62%) no-repeat -160% 0 / 260% 100%, var(--tx-bg);
+  -webkit-mask: radial-gradient(circle 9px at 0 50%, #0000 97%, #000) 0 0 / 51% 100% no-repeat, radial-gradient(circle 9px at 100% 50%, #0000 97%, #000) 100% 0 / 51% 100% no-repeat;
+  mask: radial-gradient(circle 9px at 0 50%, #0000 97%, #000) 0 0 / 51% 100% no-repeat, radial-gradient(circle 9px at 100% 50%, #0000 97%, #000) 100% 0 / 51% 100% no-repeat;
+  transition: background-position .8s var(--ease); }
+.rbtn--tix:hover { transform: translateY(-3px); filter: drop-shadow(0 9px 0 var(--tx-sh)); }
+.rbtn--tix:hover::before { background-position: 160% 0, 0 0; }
+.rbtn--tix:active { transform: translateY(2px); filter: drop-shadow(0 3px 0 var(--tx-sh)); }
+.rbtn--tix:focus-visible { outline: 3px solid var(--r-txt); outline-offset: 4px; }
+.tix__ico { width: 26px; height: 19px; flex: none; transition: transform .4s var(--ease); }
+.rbtn--tix:hover .tix__ico { transform: rotate(-14deg) scale(1.08); }
+.room--bjork .rbtn--tix { --tx-bg: var(--r-paper); --tx-fg: #8a0f2e; --tx-sh: #d5e83a; transform: rotate(-1.5deg); }
+.room--bjork .rbtn--tix:hover { transform: rotate(-1.5deg) translateY(-3px); }
+.room--charli .rbtn--tix { --tx-bg: #b6ff00; --tx-fg: #0a0a0a; --tx-sh: #ece6d8; --tx-r: 0; clip-path: none; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.room--zara .rbtn--tix { --tx-bg: #f7cf3b; --tx-fg: #9c1235; --tx-sh: #d9951e; --tx-r: 999px; }
+.room--rosalia .rbtn--tix { --tx-bg: var(--r-paper); --tx-fg: #2a0508; --tx-sh: #d4ab55; font-style: italic; font-weight: 800; }
+.room--grimes .rbtn--tix { --tx-bg: #b9a0e3; --tx-fg: #0e0c14; --tx-sh: #8fd9b6; }
+@media (prefers-reduced-motion: reduce) { .rbtn--tix, .rbtn--tix::before, .tix__ico { transition: none; } }

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sync it Entertainment Cafe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@300..600&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/home.css">
+<script>try{var m=sessionStorage.getItem('syncit:mode')||localStorage.getItem('syncit:mode');if(m==='girls'){document.documentElement.setAttribute('data-mode','girls');var l=document.createElement('link');l.rel='stylesheet';l.href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Quicksand:wght@400..700&family=Pacifico&family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@400;500;700&display=swap";document.head.appendChild(l);}}catch(e){}</script>
+<link rel="stylesheet" href="css/girls-mode.css">
+</head>
+<body class="home intro">
+<div id="site-header"></div>
+
+<main>
+  <!-- ============ HERO: the bar, lit by the time of day ============ -->
+  <section class="hero" id="hero" aria-label="Sync it">
+    <div class="stage">
+      <svg class="scene" id="scene" role="img" aria-label="Illustration of the Sync it coffee bar: an espresso machine pouring into a Sync it cup, a crystal chandelier, an arched window and a dessert case.">
+        <defs>
+          <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b6a51"/><stop offset="1" stop-color="#34503d"/></linearGradient>
+          <linearGradient id="gWood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9876a"/><stop offset="1" stop-color="#7d5f46"/></linearGradient>
+          <linearGradient id="gSteel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3c8ca"/><stop offset=".45" stop-color="#737a7d"/><stop offset="1" stop-color="#2e3234"/></linearGradient>
+          <linearGradient id="gFace" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a5053"/><stop offset="1" stop-color="#1d2022"/></linearGradient>
+          <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1d68c"/><stop offset=".5" stop-color="#b98a2e"/><stop offset="1" stop-color="#e6c26b"/></linearGradient>
+          <linearGradient id="gDoor" x1="1" y1="0" x2="0" y2="0"><stop id="d0" offset="0" stop-color="#fff1c9" stop-opacity=".95"/><stop id="d1" offset=".45" stop-color="#fff1c9" stop-opacity=".3"/><stop id="d2" offset="1" stop-color="#fff1c9" stop-opacity="0"/></linearGradient>
+          <radialGradient id="gGlow"><stop offset="0" stop-color="#ffd48a" stop-opacity=".95"/><stop offset=".35" stop-color="#ffb255" stop-opacity=".35"/><stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/></radialGradient>
+          <radialGradient id="gSunGlow"><stop offset="0" stop-color="#fff2c8" stop-opacity=".9"/><stop offset=".4" stop-color="#ffd98a" stop-opacity=".3"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/></radialGradient>
+          <radialGradient id="gVig" cx=".5" cy=".5" r=".75"><stop offset=".45" stop-color="#0e1812" stop-opacity="0"/><stop offset="1" stop-color="#0e1812" stop-opacity=".9"/></radialGradient>
+          <pattern id="pCheck" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="24" height="24" fill="#efe6cf"/><rect width="12" height="12" fill="#17130f"/><rect x="12" y="12" width="12" height="12" fill="#17130f"/>
+          </pattern>
+
+          <!-- the Sync it sun: used on the cup, the poster and in the sky -->
+          <g id="sunmini">
+            <circle r="7.2" fill="currentColor"/>
+            <circle cx="-4.3" cy="2.4" r="1.7" fill="#e0392d" opacity=".9"/><circle cx="4.3" cy="2.4" r="1.7" fill="#e0392d" opacity=".9"/>
+            <path d="M-3.6 -1.2q1.4-1.5 2.8 0M.8 -1.2q1.4-1.5 2.8 0M0 -.2v2.4M-2 4.2q2 1.6 4 0" fill="none" stroke="#5b1a10" stroke-width=".7" stroke-linecap="round"/>
+          </g>
+
+          <!-- one espresso group head with portafilter, drawn at x = 0 -->
+          <g id="grp">
+            <rect x="-24" y="556" width="48" height="46" rx="6" fill="url(#gSteel)"/>
+            <rect x="-28" y="597" width="56" height="8" rx="3" fill="#2b2f31"/>
+            <ellipse cx="0" cy="610" rx="22" ry="6" fill="#141414"/>
+            <rect x="-17" y="610" width="34" height="14" rx="3" fill="#3a3f42"/>
+            <path d="M-8 624h16l-2 8h-12z" fill="#9aa1a4"/>
+            <path d="M20 611 82 627 80 635 18 619Z" fill="#191919"/>
+            <rect x="72" y="622" width="26" height="12" rx="6" transform="rotate(14 72 622)" fill="#6a3320"/>
+          </g>
+
+          <g id="cup2">
+            <path d="M-18 -74H18L14 0H-14Z" fill="#b3201f"/>
+            <path d="M-9 -34V-1M9 -34V-1" stroke="#17120f" stroke-width="3.2" opacity=".92"/>
+            <ellipse cx="0" cy="-74" rx="18" ry="3.4" fill="#f6eedb"/>
+            <g color="#f3ead4"><g transform="translate(-6.5 -50) scale(.82)"><use href="#sunmini"/></g><g transform="translate(6.5 -50) scale(.82)"><use href="#sunmini"/></g></g>
+            <text x="0" y="-9" text-anchor="middle" font-family="Yellowtail, cursive" font-size="11" fill="#6f8a2e" stroke="#f3ead4" stroke-width=".6" paint-order="stroke">Sync it</text>
+          </g>
+          <g id="cup3">
+            <path d="M-18 -74H18L14 0H-14Z" fill="url(#pCheck)" stroke="#17120f" stroke-width="1.2"/>
+            <ellipse cx="0" cy="-74" rx="18" ry="3.4" fill="#f6eedb"/>
+            <text x="0" y="-30" text-anchor="middle" font-family="Yellowtail, cursive" font-size="13" fill="#b3201f" stroke="#f3ead4" stroke-width="1" paint-order="stroke">Sync it</text>
+          </g>
+          <g id="cat">
+            <path d="M-20 0C-24 -22 -14 -40 0 -40S24 -22 20 0Z" fill="#e0822f"/>
+            <path d="M16 -4C34 -4 38 -22 30 -30" fill="none" stroke="#e0822f" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="0" cy="-48" r="15" fill="#e8913a"/>
+            <path d="M-13 -57 -11 -72-2 -61ZM13 -57 11 -72 2 -61Z" fill="#e8913a"/>
+            <circle cx="-5.5" cy="-49" r="1.7" fill="#2a1408"/><circle cx="5.5" cy="-49" r="1.7" fill="#2a1408"/>
+            <path d="M-2 -44h4l-2 2.4zM0 -41.6q-3 3-5 1M0 -41.6q3 3 5 1" fill="#c85a4a" stroke="#6a2a18" stroke-width=".9" stroke-linecap="round"/>
+            <path d="M-14 -22q14 6 28 0" fill="none" stroke="#b9661f" stroke-width="2"/>
+          </g>
+        </defs>
+
+        <g id="cam">
+          <!-- 1 · wall, ceiling, the stage curtain at the far left -->
+          <rect x="-1200" y="-1200" width="4800" height="2000" fill="url(#gWall)"/>
+          <rect x="-1200" y="-1200" width="4800" height="1240" fill="#d9d1bd"/>
+          <rect x="-1200" y="40" width="4800" height="12" fill="#a99f86" opacity=".7"/>
+          <g id="downlights"></g>
+          <g id="curtains"></g>
+
+          <!-- 2 · three posters directly above the machine -->
+          <g transform="translate(400 190)">
+            <rect width="110" height="182" fill="#14100c"/>
+            <rect x="5" y="5" width="100" height="172" fill="#2a1410"/>
+            <rect x="5" y="5" width="24" height="172" fill="#a52320"/><rect x="81" y="5" width="24" height="172" fill="#a52320"/>
+            <rect x="29" y="5" width="52" height="172" fill="#c9ab7c"/>
+            <g color="#e5532a" transform="translate(55 62) scale(2.9)"><circle r="14" fill="url(#gSunGlow)" class="awake"/><use href="#sunmini"/><g class="awake"><ellipse cx="-2.5" cy="-1.1" rx="1.5" ry="1" fill="#fff"/><ellipse cx="2.5" cy="-1.1" rx="1.5" ry="1" fill="#fff"/><circle cx="-2.5" cy="-1.1" r=".62" fill="#2a120c"/><circle cx="2.5" cy="-1.1" r=".62" fill="#2a120c"/></g></g>
+            <rect x="5" y="150" width="100" height="27" fill="url(#pCheck)"/>
+            <text x="55" y="148" text-anchor="middle" font-family="Yellowtail, cursive" font-size="31" fill="#efe6cf" stroke="#4d5a1d" stroke-width="1.4" paint-order="stroke">Sync it</text>
+          </g>
+          <g transform="translate(530 190)">
+            <rect width="110" height="182" fill="#14100c"/>
+            <rect x="5" y="5" width="100" height="172" fill="url(#pCheck)"/>
+            <path d="M18 80 55 40 92 80Z" fill="#b3201f"/><path d="M55 40 41 80H69Z" fill="#efe6cf"/>
+            <rect x="14" y="80" width="82" height="22" rx="3" fill="#1a140e"/>
+            <g fill="#efe6cf"><ellipse cx="30" cy="91" rx="9" ry="6"/><ellipse cx="55" cy="91" rx="9" ry="6"/><ellipse cx="80" cy="91" rx="9" ry="6"/></g>
+            <g fill="#5c6b1f"><circle cx="30" cy="91" r="3.4"/><circle cx="55" cy="91" r="3.4"/><circle cx="80" cy="91" r="3.4"/></g>
+            <g fill="#111"><circle cx="30" cy="91" r="1.4"/><circle cx="55" cy="91" r="1.4"/><circle cx="80" cy="91" r="1.4"/></g>
+            <rect x="14" y="106" width="82" height="34" fill="#9b1d1a"/><circle cx="55" cy="123" r="11" fill="#d8472a"/>
+            <rect x="10" y="144" width="90" height="12" rx="3" fill="#2a1c12"/><ellipse cx="55" cy="150" rx="12" ry="5" fill="#d9c14a"/>
+          </g>
+          <g transform="translate(660 190)">
+            <rect width="110" height="182" fill="#14100c"/>
+            <rect x="5" y="5" width="100" height="172" fill="#a9261f"/>
+            <g color="#f3ead4"><g transform="translate(36 66) scale(2.5)"><use href="#sunmini"/></g><g transform="translate(74 66) scale(2.5)"><use href="#sunmini"/></g></g>
+            <rect x="5" y="120" width="100" height="14" fill="url(#pCheck)"/>
+            <text x="55" y="162" text-anchor="middle" font-family="Yellowtail, cursive" font-size="34" fill="#efe6cf" stroke="#4d5a1d" stroke-width="1.5" paint-order="stroke">Sync it</text>
+          </g>
+
+          <!-- 3 · chandelier (generated) -->
+          <g id="chandelier" transform="translate(110 0)"></g>
+
+          <!-- 4 · the back counter: espresso machine, lamp, figurines, hoppers, rack, plant -->
+          <g id="things">
+            <rect x="396" y="414" width="400" height="16" rx="8" fill="url(#gSteel)"/>
+            <rect x="404" y="430" width="384" height="350" rx="10" fill="#1a1c1d"/>
+            <rect x="418" y="446" width="356" height="104" rx="6" fill="url(#gFace)"/>
+            <rect x="418" y="610" width="356" height="148" rx="4" fill="#0d0e0f"/>
+            <g id="btns" fill="#e8dcb4"></g>
+            <g fill="#d63a2a"><circle cx="446" cy="486" r="2.2"/><circle cx="571" cy="486" r="2.2"/><circle cx="696" cy="486" r="2.2"/><circle cx="500" cy="486" r="2.2"/><circle cx="625" cy="486" r="2.2"/><circle cx="750" cy="486" r="2.2"/></g>
+            <circle cx="532" cy="518" r="16" fill="#e9dfc2" stroke="#8d9396" stroke-width="3"/><path d="M532 518 541 509" stroke="#a52320" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="657" cy="518" r="16" fill="#e9dfc2" stroke="#8d9396" stroke-width="3"/><path d="M657 518 648 509" stroke="#a52320" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M788 470h14q8 0 8 8v118" fill="none" stroke="url(#gSteel)" stroke-width="6" stroke-linecap="round"/>
+            <rect x="418" y="758" width="356" height="18" rx="3" fill="url(#gSteel)"/>
+            <path d="M432 764h328M432 770h328" stroke="#171a1b" stroke-width="1.2"/>
+            <use href="#grp" x="470"/><use href="#grp" x="595"/><use href="#grp" x="720"/>
+
+            <!-- the pour: this is where the intro starts -->
+            <g id="pourFx" fill="none" stroke-linecap="round">
+              <path class="stream" d="M590 632V706"/><path class="stream s2" d="M600 632V706"/>
+              <path class="stream hi" d="M589.4 634V700"/>
+            </g>
+            <g id="cup">
+              <path d="M565 700H625L617 774H573Z" fill="#b3201f"/>
+              <path d="M580 724V772M610 724V772" stroke="#17120f" stroke-width="4" opacity=".9"/>
+              <ellipse cx="595" cy="700" rx="30" ry="5.5" fill="#f6eedb"/>
+              <ellipse cx="595" cy="701" rx="26" ry="3.6" fill="#4a2410"/>
+              <ellipse id="crema" cx="595" cy="701" rx="24" ry="3" fill="#c48646"/>
+              <g color="#f3ead4"><g transform="translate(585 742) scale(.95)"><use href="#sunmini"/></g><g transform="translate(605 742) scale(.95)"><use href="#sunmini"/></g></g>
+              <text x="595" y="768" text-anchor="middle" font-family="Yellowtail, cursive" font-size="14" fill="#f3ead4">Sync it</text>
+            </g>
+            <g class="steam" fill="none" stroke="#f3ead4" stroke-width="2" stroke-linecap="round">
+              <path d="M585 690c-6-10 6-16 0-28"/><path d="M597 688c-6-12 6-18 0-32"/><path d="M608 690c-5-9 5-15 0-26"/>
+            </g>
+
+            <!-- on top of the machine: the stained-glass lamp and a row of little figurines -->
+            <rect x="496" y="392" width="8" height="24" fill="#7a5a22"/>
+            <ellipse cx="500" cy="416" rx="17" ry="4" fill="#5a4118"/>
+            <path d="M462 394C462 344 538 344 538 394Z" fill="#c9dcee"/>
+            <path d="M462 394C462 344 538 344 538 394M500 350V394M480 356 491 394M520 356 509 394M468 374H532" fill="none" stroke="#2a3a52" stroke-width="1.8"/>
+            <circle cx="484" cy="374" r="5.5" fill="#e9a0b0"/><circle cx="500" cy="364" r="5.5" fill="#e9c06a"/><circle cx="516" cy="374" r="5.5" fill="#e9a0b0"/><circle cx="491" cy="384" r="4.5" fill="#6aa0c8"/><circle cx="509" cy="384" r="4.5" fill="#6aa0c8"/>
+            <g id="figs"></g>
+            <rect x="752" y="390" width="14" height="26" fill="url(#pCheck)" stroke="#17120f" stroke-width="1"/>
+            <path d="M770 416V396l7-8 7 8v20z" fill="#c9582a"/><rect x="775" y="400" width="4" height="6" fill="#f3d98a"/>
+
+            <!-- bean hoppers and the steel rack -->
+            <path d="M808 650h60l-14 130H822Z" fill="#17110c" stroke="#3a2a1d" stroke-width="2"/>
+            <path d="M868 650h60l-14 130H882Z" fill="#17110c" stroke="#3a2a1d" stroke-width="2"/>
+            <ellipse cx="838" cy="650" rx="30" ry="6" fill="#4a2c1c"/><ellipse cx="898" cy="650" rx="30" ry="6" fill="#4a2c1c"/>
+            <g fill="#7a4a2a" id="beans"></g>
+            <g><path d="M944 776v-44q0 -6 5 -8v-12h8v12q5 2 5 8v44z" fill="#7a1f22"/><rect x="948" y="712" width="10" height="5" fill="#d9cfb4"/><rect x="945" y="752" width="16" height="14" fill="#efe6cf" opacity=".85"/><path d="M966 776v-53q0 -6 5 -8v-12h8v12q5 2 5 8v53z" fill="#c98a2c"/><rect x="970" y="703" width="10" height="5" fill="#d9cfb4"/><rect x="967" y="747" width="16" height="14" fill="#efe6cf" opacity=".85"/><path d="M988 776v-62q0 -6 5 -8v-12h8v12q5 2 5 8v62z" fill="#3d6b3a"/><rect x="992" y="694" width="10" height="5" fill="#d9cfb4"/><rect x="989" y="742" width="16" height="14" fill="#efe6cf" opacity=".85"/><path d="M1010 776v-51q0 -6 5 -8v-12h8v12q5 2 5 8v51z" fill="#2a2f55"/><rect x="1014" y="705" width="10" height="5" fill="#d9cfb4"/><rect x="1011" y="748" width="16" height="14" fill="#efe6cf" opacity=".85"/><path d="M1032 776v-60q0 -6 5 -8v-12h8v12q5 2 5 8v60z" fill="#b3503a"/><rect x="1036" y="696" width="10" height="5" fill="#d9cfb4"/><rect x="1033" y="743" width="16" height="14" fill="#efe6cf" opacity=".85"/></g>
+            <g><rect x="346" y="744" width="30" height="32" rx="3" fill="#f4efe2"/><ellipse cx="361" cy="744" rx="15" ry="4" fill="#fffaf0"/><ellipse cx="361" cy="744" rx="5" ry="1.6" fill="#cfc6ae"/><path d="M346 776h30" stroke="#8d8570" stroke-width="2"/></g>
+            <g id="plant"></g>
+          </g>
+
+          <!-- back counter top -->
+          <rect x="-1200" y="776" width="4800" height="16" fill="#e9dcc0"/>
+          <rect x="-1200" y="792" width="4800" height="90" fill="url(#gWood)"/>
+
+          <!-- 5 · the white bar in front: cats, cups, bell, chalkboard, crochet, desserts, flowers -->
+          <g id="front">
+            <g transform="translate(64 60)">
+              <rect x="236" y="736" width="150" height="44" rx="3" fill="#8a5a2e"/><rect x="236" y="736" width="150" height="8" fill="#a97a43"/>
+              <g id="crochet"></g>
+            </g>
+            <g transform="rotate(-3 515 810)">
+              <rect x="470" y="778" width="90" height="62" rx="2" fill="#5b2a1c"/><rect x="475" y="783" width="80" height="52" fill="#121614"/>
+              <text x="515" y="806" text-anchor="middle" font-family="Yellowtail, cursive" font-size="13" fill="#efe6cf">A symphony of</text>
+            </g>
+            <rect x="606" y="812" width="84" height="28" rx="3" fill="#a52320"/><path d="M610 820h76M610 832h76" stroke="url(#gGold)" stroke-width="2"/><circle cx="648" cy="826" r="4" fill="#e6c26b"/>
+            <use href="#cat" transform="translate(738 840) scale(1.05)"/>
+            <use href="#cat" transform="translate(806 840) scale(.9)"/>
+            <use href="#cup2" x="862" y="840"/><use href="#cup3" x="906" y="840"/>
+            <path d="M946 840a16 14 0 0 1 32 0z" fill="url(#gSteel)"/><circle cx="962" cy="824" r="3" fill="#c9c9c9"/><ellipse cx="962" cy="840" rx="19" ry="3.5" fill="#6d7376"/>
+            <!-- curved glass dessert display -->
+            <g>
+              <rect x="984" y="822" width="262" height="18" fill="#e6dcc3"/>
+              <path d="M990 822V772Q990 724 1040 724H1190Q1240 724 1240 772V822Z" fill="#fff1d2" fill-opacity=".22" stroke="#d9ecee" stroke-opacity=".75" stroke-width="3"/>
+              <path d="M1000 800H1230M1000 768H1230" stroke="#f4ead2" stroke-width="3.4" opacity=".9"/>
+              <rect x="996" y="770" width="238" height="5" fill="#fff6dc" opacity=".6"/>
+              <g>
+                <path d="M1010 798l34-22v22z" fill="#3a1d12"/><path d="M1010 792l34-22" stroke="#e9d3a8" stroke-width="3"/>
+                <rect x="1058" y="778" width="40" height="20" rx="2" fill="#efe0bd"/><rect x="1058" y="778" width="40" height="7" fill="#6a3d22"/>
+                <circle cx="1124" cy="788" r="10" fill="#c9585a"/><circle cx="1124" cy="788" r="3.4" fill="#2a1a12"/>
+                <path d="M1146 798l30-18v18z" fill="#efe3c6"/><path d="M1146 798h30v-5h-30z" fill="#7a3a2c"/>
+                <circle cx="1202" cy="788" r="11" fill="#6b3a22"/><circle cx="1202" cy="788" r="3.6" fill="#2a1a12"/>
+                <rect x="1012" y="746" width="40" height="22" rx="3" fill="#efe0bd"/><rect x="1012" y="746" width="40" height="7" fill="#7a3a2c"/>
+                <circle cx="1078" cy="758" r="10" fill="#6b3a22"/><circle cx="1078" cy="758" r="3.4" fill="#2a1a12"/>
+                <path d="M1100 768l32-20v20z" fill="#e9c06a"/><path d="M1100 768h32v-5h-32z" fill="#6a3d22"/>
+                <rect x="1152" y="748" width="44" height="20" rx="2" fill="#efe3c6"/><rect x="1152" y="748" width="44" height="6" fill="#c9585a"/>
+                <circle cx="1216" cy="756" r="11" fill="#c9585a"/><circle cx="1216" cy="756" r="3.6" fill="#2a1a12"/>
+              </g>
+              <path d="M1008 740Q1030 728 1060 727" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+              <rect x="1190" y="826" width="40" height="11" rx="1.5" fill="#fffaf0"/><path d="M1195 831h30" stroke="#8d8570" stroke-width="1.4"/>
+            </g>
+            <!-- payment machine: POS screen on a stand and a card reader -->
+            <g>
+              <ellipse cx="1290" cy="838" rx="26" ry="4.4" fill="#17181a"/>
+              <rect x="1286" y="808" width="8" height="30" fill="#1b1d1f"/>
+              <rect x="1256" y="760" width="68" height="46" rx="4" fill="#15181b"/>
+              <rect x="1261" y="765" width="58" height="36" rx="2" fill="#4aa3ee"/>
+              <rect x="1261" y="765" width="58" height="36" rx="2" fill="url(#gGlow)" opacity=".5"/>
+              <path d="M1267 774h30M1267 782h22M1267 790h36" stroke="#e9f4ff" stroke-width="2.6" stroke-linecap="round" opacity=".85"/>
+              <rect x="1318" y="810" width="28" height="30" rx="4" fill="#1b1d1f" transform="rotate(-8 1332 825)"/>
+              <rect x="1322" y="814" width="20" height="9" rx="1.5" fill="#6fb6f0" transform="rotate(-8 1332 825)"/>
+              <path d="M1324 828h16M1324 833h16" stroke="#6b7074" stroke-width="2.4" transform="rotate(-8 1332 825)"/>
+            </g>
+            <!-- white flowers in a glass vase -->
+            <g>
+              <path d="M1384 840h30l-4-34h-22z" fill="#cfe3e6" fill-opacity=".6" stroke="#e4f2f4" stroke-width="1.5"/>
+              <path d="M1392 830h14" stroke="#7fb26a" stroke-width="2"/>
+              <g id="roses"></g>
+            </g>
+            <!-- framed art on the wall: the client's coffee illustration -->
+            <g transform="translate(1146 172)">
+              <rect width="94" height="137" fill="#1a1410"/>
+              <rect x="2" y="2" width="90" height="133" fill="none" stroke="#c9a24d" stroke-width="1.4"/>
+              <image href="assets/wall-art.jpg" x="4" y="4" width="86" height="129" preserveAspectRatio="xMidYMid slice"/>
+            </g>
+          </g>
+
+          <!-- bar top and front -->
+          <rect x="-1200" y="840" width="4800" height="28" fill="#efe4cc"/>
+          <rect x="-1200" y="840" width="4800" height="5" fill="#fff6dc"/>
+          <rect x="-1200" y="868" width="4800" height="6" fill="#2b130c" opacity=".7"/>
+          <rect x="-1200" y="874" width="4800" height="600" fill="url(#gWood)"/>
+          <g id="flutes"></g>
+          <rect x="-1200" y="878" width="4800" height="3" fill="url(#gGold)" opacity=".85"/>
+
+          <!-- 6 · the room dims with the hour -->
+          <rect id="tint" x="-3000" y="-3000" width="7000" height="7000" fill="#ffffff"/>
+
+          <!-- 7 · light from the door, which is just off the right edge of the frame -->
+          <rect id="doorWash" x="800" y="-400" width="900" height="1900" fill="url(#gDoor)"/>
+          <polygon id="beam" points="1150,874 1750,874 1750,1180 1150,1180"/>
+
+          <!-- 8 · lamps on top -->
+          <g id="glows" class="glows">
+            <circle cx="910" cy="250" r="300" fill="url(#gGlow)"/>
+            <circle cx="500" cy="372" r="140" fill="url(#gGlow)"/>
+            <ellipse cx="1145" cy="780" rx="170" ry="90" fill="url(#gGlow)"/>
+            <ellipse cx="595" cy="690" rx="190" ry="120" fill="url(#gGlow)" opacity=".5"/>
+          </g>
+
+        </g>
+        <rect id="vig" width="100%" height="100%" fill="url(#gVig)" pointer-events="none"/>
+      </svg>
+      <div class="hero__scrim" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__copy">
+      <h1 data-i18n-html="hero_h1">Come for the coffee. <em>Stay for the show.</em></h1>
+      <p class="hero__sub" data-i18n="hero_sub">An entertainment cafe in Al Khobar with live music nights, chess, fashion events and thrift, all under one chandelier.</p>
+      <div class="hero__cta">
+        <a class="btn btn--red" href="menu.html"><span data-i18n="hero_cta1">See the menu</span></a>
+        <a class="btn btn--ghost" href="musical-events.html"><span data-i18n="hero_cta2">What's on</span></a>
+      </div>
+    </div>
+
+    <div class="hero__facts">
+      <div class="fact"><span class="fact__label" data-i18n="fact1_l">Right now</span><span class="fact__value" id="fact1">…</span></div>
+      <div class="plate plate--gather" id="plateG" role="group"></div>
+      <div class="plate plate--bjork" id="plateB" role="group"></div>
+    </div>
+    <button class="hero__replay" id="heroReplay" type="button"><span data-i18n="f_replay">Replay the intro</span></button>
+  </section>
+
+  <!-- ============ TRANSITION: the coffee rises, the room turns green ============ -->
+  <section class="pour" id="pour">
+    <div class="pour__sticky">
+      <div class="pour__liquid" id="liquid"></div>
+      <div class="pour__copy" id="pourCopy">
+        <h2 data-i18n="pour_title">Step inside.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEVEN WAYS IN ============ -->
+  <section class="doors-sec" id="doors" aria-labelledby="doorsTitle">
+    <header class="doors-head">
+      <p class="eyebrow"><span aria-hidden="true">◆</span> <span data-i18n="doors_eyebrow">Seven ways in</span></p>
+      <h2 id="doorsTitle" data-i18n-html="doors_title">Choose your <em>entrance</em></h2>
+      <p class="doors-sub" data-i18n="doors_sub">Each door opens a different side of Sync it.</p>
+    </header>
+
+    <nav class="doors" id="doors-row" aria-label="Pages">
+      <a class="door door--cream" style="--h:.8" href="menu.html">
+        <span class="door__field"></span>
+        <span class="door__num" data-i18n="num1">I</span>
+        <svg class="door__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 20h22v8a11 11 0 0 1-22 0z"/><path d="M34 22h3a4 4 0 0 1 0 8h-4"/><path d="M10 40h28"/><path d="M19 8c-2 3 2 4 0 8M26 8c-2 3 2 4 0 8"/></svg>
+        <span class="door__body"><span class="door__title" data-i18n="n_menu">Menu</span><span class="door__text" data-i18n="d1">Hot and cold drinks, mojitos, bubble tea and desserts.</span><span class="door__enter"><span data-i18n="enter">Enter</span></span></span>
+      </a>
+      <a class="door door--olive" style="--h:.93" href="music-gathering.html">
+        <span class="door__field"></span>
+        <span class="door__num" data-i18n="num2">II</span>
+        <svg class="door__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="18" y="6" width="12" height="20" rx="6"/><path d="M18 14h12M18 19h12"/><path d="M12 22a12 12 0 0 0 24 0"/><path d="M24 34v8M17 42h14"/></svg>
+        <span class="door__body"><span class="door__title" data-i18n="n_gather">Music Gathering</span><span class="door__text" data-i18n="d2">Every Tuesday. Add your name to the Vibe Board.</span><span class="door__enter"><span data-i18n="enter">Enter</span></span></span>
+      </a>
+      <a class="door door--red" style="--h:1" href="musical-events.html">
+        <span class="door__field"></span>
+        <span class="door__num" data-i18n="num3">III</span>
+        <svg class="door__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8h32"/><path d="M10 8c0 14-2 26-4 32h12c-4-8-4-20-4-32M38 8c0 14 2 26 4 32H30c4-8 4-20 4-32"/><path d="M24 18l5 6-5 6-5-6z"/></svg>
+        <span class="door__body"><span class="door__title" data-i18n="n_events">Musical Events</span><span class="door__text" data-i18n="d3">Performance nights on the Sync it stage, upcoming and past.</span><span class="door__enter"><span data-i18n="enter">Enter</span></span></span>
+      </a>
+      <a class="door door--black" style="--h:.84" href="chess.html">
+        <span class="door__field"></span>
+        <span class="door__num" data-i18n="num4">IV</span>
+        <svg class="door__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="12" r="5"/><path d="M20 20h8M21 20c-3 6-3 12-6 18h18c-3-6-3-12-6-18M13 38h22v4H13z"/></svg>
+        <span class="door__body"><span class="door__title" data-i18n="n_chess">Chess</span><span class="door__text" data-i18n="d4">Chess events, and a board to play against three characters.</span><span class="door__enter"><span data-i18n="enter">Enter</span></span></span>
+      </a>
+      <a class="door door--blush" style="--h:.92" href="girls-only.html">
+        <span class="door__field"></span>
+        <span class="door__num" data-i18n="num5">V</span>
+        <svg class="door__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 24c-6-8-16-8-16-1s10 9 16 1zM24 24c6-8 16-8 16-1s-10 9-16 1z"/><circle cx="24" cy="24" r="3"/><path d="M22 27l-6 14M26 27l6 14"/></svg>
+        <span class="door__body"><span class="door__title" data-i18n="n_girls">Girls Only</span><span class="door__text" data-i18n="d5">Mini Market, Fancy Nancy and a softer side of Sync it.</span><span class="door__enter"><span data-i18n="enter">Enter</span></span></span>
+      </a>
+      <a class="door door--mustard" style="--h:.82" href="thrift.html">
+        <span class="door__field"></span>
+        <span class="door__num" data-i18n="num6">VI</span>
+        <svg class="door__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 17v-2a4 4 0 1 1 4 4"/><path d="M24 18 6 33c-2 2-1 4 2 4h32c3 0 4-2 2-4z"/></svg>
+        <span class="door__body"><span class="door__title" data-i18n="n_thrift">Thrift</span><span class="door__text" data-i18n="d6">Thrifted tops and a mystery thrifting corner.</span><span class="door__enter"><span data-i18n="enter">Enter</span></span></span>
+      </a>
+      <a class="door door--line" style="--h:.76" href="guidelines.html">
+        <span class="door__field"></span>
+        <span class="door__num" data-i18n="num7">VII</span>
+        <svg class="door__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M19 19a5 5 0 1 1 7 4.6c-1.6.8-2 1.8-2 3.4M24 33.5v.5"/></svg>
+        <span class="door__body"><span class="door__title" data-i18n="n_faq">Guidelines &amp; FAQ</span><span class="door__text" data-i18n="d7">House guidelines and answers to practical questions.</span><span class="door__enter"><span data-i18n="enter">Enter</span></span></span>
+      </a>
+    </nav>
+    <div class="doors-base" aria-hidden="true"><i></i></div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/site.js"></script>
+<script src="js/home.js"></script>
+<script>setTimeout(function(){document.body.classList.remove("intro");var h=document.getElementById("hero");if(h)h.classList.add("is-in");},12000);</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thrift · Sync it Entertainment Cafe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('syncit:tr'))document.documentElement.classList.add('tr-cover','pg-thrift')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@300..700&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@300;400;500;700&family=Yellowtail&family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/thrift.css">
+<script>try{var m=sessionStorage.getItem('syncit:mode')||localStorage.getItem('syncit:mode');if(m==='girls'){document.documentElement.setAttribute('data-mode','girls');var l=document.createElement('link');l.rel='stylesheet';l.href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Quicksand:wght@400..700&family=Pacifico&family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@400;500;700&display=swap";document.head.appendChild(l);}}catch(e){}</script>
+<link rel="stylesheet" href="css/girls-mode.css">
+</head>
+<body class="thrift">
+<div id="site-header"></div>
+
+<!-- ===== HERO ===== -->
+<section class="th-hero" id="top" aria-labelledby="thH1">
+  <video class="th-hero__vid" src="assets/thrift/hero.mp4" poster="assets/thrift/hero-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="th-hero__shade"></div>
+  <div class="th-hero__copy">
+    <p class="th-hero__script" data-i18n="th_script">hand-picked, one rail at a time</p>
+    <h1 id="thH1" data-i18n="th_h1">Thrift</h1>
+    <p class="th-hero__sub" data-i18n="th_sub">Vintage tees, cosy knits and sealed mystery bags, in a corner of Sync it.</p>
+    <div class="th-hero__cta">
+      <a class="btn btn--gold" href="#rail"><span data-i18n="th_rail_btn">Browse the rail</span></a>
+      <a class="btn btn--ghost th-ghost" href="#mystery"><span data-i18n="th_myst_btn">Open a mystery bag</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE RAIL ===== -->
+<section class="th-rail" id="rail" aria-labelledby="railH">
+  <div class="th-head">
+    <h2 id="railH" data-i18n="th_rail">On the rail</h2>
+    <p data-i18n="th_rail_s">Tap a piece to turn it over. Everything here is for display; come in to try it on.</p>
+  </div>
+  <div class="th-rail__scroll" tabindex="0" data-i18n-attr="aria-label:th_rail_aria">
+    <div class="th-rail__in" id="railIn"></div>
+  </div>
+</section>
+
+<!-- ===== THE WALL ===== -->
+<section class="th-wall" aria-labelledby="wallH">
+  <div class="th-wall__in">
+    <figure class="th-wall__pic">
+      <img src="assets/thrift/wall.jpg" alt="" loading="lazy" data-i18n-attr="alt:th_wall_alt">
+    </figure>
+    <div class="th-wall__txt">
+      <h2 id="wallH" data-i18n="th_wall">The green wall</h2>
+      <p data-i18n="th_wall_p">Vintage band tees hang on the wall under the lamps. Browse them, hold them up to the light, and take your pick.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MYSTERY ===== -->
+<section class="th-myst" id="mystery" aria-labelledby="mystH">
+  <div class="th-head">
+    <h2 id="mystH" data-i18n="th_myst">Mystery thrifting</h2>
+    <p data-i18n="th_myst_s">Pick your size, pick a sealed bag, and see what kind of top is waiting inside.</p>
+  </div>
+
+  <div class="th-sizes" role="radiogroup" id="sizes" data-i18n-attr="aria-label:th_size_l"></div>
+
+  <div class="th-bags" id="bags"></div>
+
+  <div class="th-reveal" id="reveal" aria-live="polite">
+    <p class="th-reveal__empty" id="revEmpty" data-i18n="th_rev_empty">Choose a bag to open it.</p>
+    <div class="th-reveal__card" id="revCard" hidden>
+      <svg id="revIcon" viewBox="0 0 120 120" aria-hidden="true"></svg>
+      <div>
+        <p class="th-reveal__pre" id="revPre"></p>
+        <h3 id="revName"></h3>
+        <p class="th-reveal__size" id="revSize"></p>
+      </div>
+    </div>
+    <p class="th-reveal__note" data-i18n="th_rev_note">This is a taste of the idea. The real bag stays sealed until it is yours.</p>
+    <button class="btn btn--ghost" type="button" id="reseal"><span data-i18n="th_reseal">Seal the bags again</span></button>
+  </div>
+</section>
+
+<!-- ===== VISIT ===== -->
+<section class="th-visit" aria-labelledby="visH">
+  <div class="th-visit__in">
+    <h2 id="visH" data-i18n="th_visit">Come and dig</h2>
+    <p data-i18n="th_visit_p">The thrift corner is open whenever Sync it is. Just walk in.</p>
+    <p class="th-visit__status" id="thStatus"></p>
+    <a class="btn btn--gold" href="https://www.instagram.com/sync.1t/" target="_blank" rel="noopener"><span data-i18n="th_follow">See new drops on Instagram</span></a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/thrift.js"></script>
+</body>
+</html>

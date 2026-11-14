@@ -1,0 +1,84 @@
+/* Sync it — Girls mode.
+   Switched on by html[data-mode="girls"] (set when someone opens Girls Only, kept until they press "Back to the bar").
+   Same pages, new world: the dark green theatre becomes a pink, butter-yellow and powder-blue one, taken from the Fancy Nancy poster. */
+html[data-mode="girls"] {
+  color-scheme: light;
+  --ink: #fff1f6; --forest: #ffe3ee; --moss: #ffd0e1; --cream: #6d1b3f; --paper: #7a2150;
+  --gold: #ef6f9f; --gold-soft: #c73a74; --red: #e3447d; --red-deep: #b32a5e; --blush: #ffc4d8; --olive: #7aa6d6; --mustard: #f5c84c; --espresso: #6d1b3f;
+  --ink-rgb: 255, 241, 246; --cream-rgb: 109, 27, 63; --gold-rgb: 239, 111, 159;
+  --butter: #fbe39a; --powder: #bcd4ee; --rose: #e3447d; --hot: #d94571; --white: #fffaf3;
+  --f-display: "Fraunces", "Playfair Display", Georgia, serif;
+  --f-body: "Quicksand", "Jost", system-ui, sans-serif;
+  --f-script: "Pacifico", "Yellowtail", cursive;
+}
+html[data-mode="girls"][lang="ar"] { --f-display: "Baloo Bhaijaan 2", "Reem Kufi", serif; --f-body: "Tajawal", "Quicksand", system-ui, sans-serif; }
+
+html.mode-fade, html.mode-fade *, html.mode-fade *::before, html.mode-fade *::after { transition: background-color .7s ease, color .7s ease, border-color .7s ease, fill .7s ease, stroke .7s ease !important; }
+
+html[data-mode="girls"] body {
+  background-color: var(--ink);
+  background-image: radial-gradient(circle at 14px 14px, rgba(239, 111, 159, .13) 2.2px, transparent 2.8px);
+  background-size: 32px 32px;
+  font-weight: 500;
+}
+html[data-mode="girls"] h1, html[data-mode="girls"] h2, html[data-mode="girls"] h3 { font-weight: 600; letter-spacing: -.005em; }
+html[data-mode="girls"] em { font-family: var(--f-script); font-style: normal; font-weight: 400; color: var(--hot); }
+html[data-mode="girls"] ::selection { background: var(--butter); color: #6d1b3f; }
+html[data-mode="girls"] :focus-visible { outline-color: var(--hot); }
+
+/* buttons: bubbly */
+html[data-mode="girls"] .btn { font-weight: 700; box-shadow: 0 4px 0 rgba(109, 27, 63, .18); }
+html[data-mode="girls"] .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(109, 27, 63, .18); }
+html[data-mode="girls"] .btn--red { color: #fff; background: linear-gradient(180deg, #ee5b8e, #d93d74); }
+html[data-mode="girls"] .btn--red:hover { background: linear-gradient(180deg, #f36c9b, #e04a80); }
+html[data-mode="girls"] .btn--gold { color: #6d1b3f; background: linear-gradient(180deg, #ffe9a6, #f7d56e); }
+html[data-mode="girls"] .btn--ghost { border-color: rgba(109, 27, 63, .45); border-width: 2px; }
+html[data-mode="girls"] .btn--ghost:hover { background: var(--cream); color: #fff1f6; }
+
+/* header, nav, footer */
+html[data-mode="girls"] .brand__script { color: var(--hot); }
+html[data-mode="girls"] .hdr.is-solid { background: rgba(255, 241, 246, .86); backdrop-filter: blur(10px); border-bottom: 2px dotted rgba(217, 69, 113, .35); }
+html[data-mode="girls"] .hdr__burger span { background: var(--cream); }
+html[data-mode="girls"] .nav { background: linear-gradient(180deg, #ffe3ee, #ffd0e1); }
+
+/* the little pop-up chip that takes you back */
+.gchip { position: fixed; inset-inline-start: 16px; bottom: 16px; z-index: 80; display: none; align-items: center; gap: 8px; padding: .55em 1.1em .55em .8em; border-radius: 999px; border: 2px solid #fff; background: linear-gradient(180deg, #ee5b8e, #d93d74); color: #fff; font: 700 14px/1 var(--f-body); box-shadow: 0 8px 20px rgba(217, 61, 116, .35); transition: transform .3s var(--ease); }
+.gchip svg { width: 22px; height: 16px; }
+.gchip:hover { transform: translateY(-2px) rotate(-1.5deg); }
+html[data-mode="girls"] .gchip { display: inline-flex; animation: chipin .7s var(--ease) .6s both; }
+@keyframes chipin { from { opacity: 0; transform: translateY(18px) scale(.9); } to { opacity: 1; transform: none; } }
+
+/* pop stickers (tapping anywhere) */
+.gpop { position: fixed; z-index: 400; pointer-events: none; left: 0; top: 0; will-change: transform, opacity; }
+.gpop svg { display: block; width: 100%; height: 100%; filter: drop-shadow(0 3px 3px rgba(109, 27, 63, .25)); }
+.gsay { position: fixed; z-index: 401; pointer-events: none; left: 0; top: 0; will-change: transform, opacity; max-width: min(280px, 80vw); }
+.gsay img { display: block; border-radius: 14px; border: 3px solid #fff; box-shadow: 0 10px 24px rgba(109, 27, 63, .3); }
+.gsay span { display: block; padding: .7em 1.1em; border-radius: 22px; background: #fff; border: 3px solid #f6a3c1; color: #6d1b3f; font: 700 17px/1.3 var(--f-body); text-align: center; box-shadow: 0 10px 24px rgba(109, 27, 63, .25); }
+
+/* ---- home page: the bar, but rose-lit ---- */
+html[data-mode="girls"] .stage::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, #ffc6dc, #f58fb6); mix-blend-mode: screen; opacity: .7; }
+html[data-mode="girls"] .stage .scene { filter: saturate(.85) brightness(1.15); }
+html[data-mode="girls"] .hero h1 em { color: var(--hot); }
+
+/* ---- chess page in pink ---- */
+html[data-mode="girls"] .ch-hero { background: repeating-linear-gradient(90deg, rgba(227, 68, 125, .1) 0 30px, rgba(255, 255, 255, .4) 30px 60px), linear-gradient(180deg, #ffe3ee, #ffc6dc 55%, #ffb3cf); }
+html[data-mode="girls"] .ch-hero::before { background: linear-gradient(90deg, #f27fa8, #fbe39a, #f27fa8); }
+html[data-mode="girls"] .ch-hero::after { border-top-color: #f27fa8; }
+html[data-mode="girls"] .ch-play { background: radial-gradient(ellipse at 50% 0%, #ffd0e1, var(--ink) 70%); }
+html[data-mode="girls"] .ch-boardwrap { background: linear-gradient(135deg, #ffd0e1, #ef6f9f 45%, #f6a3c1); }
+html[data-mode="girls"] .sq.l { background: #ffeaf2; --lab: #d94571; }
+html[data-mode="girls"] .sq.d { background: #f48fb6; --lab: #fff1f6; }
+html[data-mode="girls"] .pc-w { --pf: #fffaf3; --ps: #6d1b3f; }
+html[data-mode="girls"] .pc-b { --pf: #4a1538; --ps: #ffc4d8; }
+html[data-mode="girls"] .pbar__clock { background: #fff; color: #6d1b3f; border-color: rgba(217, 69, 113, .5); }
+html[data-mode="girls"] .ch-player.is-turn .pbar__clock { background: #fbe39a; color: #6d1b3f; }
+html[data-mode="girls"] .promo__row button { border-color: #ef6f9f; background: #ffeaf2; }
+html[data-mode="girls"] .ch-night { background: radial-gradient(ellipse at 50% 28%, #fffaf3 0, #ffe3ee 52%, #ffc6dc 100%); }
+html[data-mode="girls"] .ch-night h2 { color: #e3447d; }
+html[data-mode="girls"] .ch-night__next { background: #6d1b3f; }
+html[data-mode="girls"] .facts li { border-top-color: #6d1b3f; }
+html[data-mode="girls"] .ch-night__checks i { background: #f48fb6; }
+html[data-mode="girls"] .ch-night__checks i:nth-child(even) { background: #fff1f6; }
+html[data-mode="girls"] .ch-night__next { color: #fff; }
+html[data-mode="girls"] .fam__av--two .r, html[data-mode="girls"] .pbar__av { background: #f48fb6; }
+html[data-mode="girls"] .talk__av { background: #ffe3ee; }

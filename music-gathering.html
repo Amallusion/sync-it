@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music Gathering · Sync it Entertainment Cafe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('syncit:tr'))document.documentElement.classList.add('tr-cover')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@300..600&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/music.css">
+<script>try{var m=sessionStorage.getItem('syncit:mode')||localStorage.getItem('syncit:mode');if(m==='girls'){document.documentElement.setAttribute('data-mode','girls');var l=document.createElement('link');l.rel='stylesheet';l.href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Quicksand:wght@400..700&family=Pacifico&family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@400;500;700&display=swap";document.head.appendChild(l);}}catch(e){}</script>
+<link rel="stylesheet" href="css/girls-mode.css">
+</head>
+<body class="music">
+<div id="site-header"></div>
+
+<section class="mg-hero" id="top" aria-label="Music Gathering">
+  <video class="mg-hero__vid" id="mgVid" src="assets/music/hero.mp4" poster="assets/music/hero-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="mg-hero__shade"></div>
+  <div class="mg-hero__copy">
+    <h1><span data-i18n="mg_h1a">Music</span> <span data-i18n="mg_h1b">Gathering</span></h1>
+    <p class="mg-hero__when" data-i18n="mg_when">Every Tuesday · 8:30 pm</p>
+    <p class="mg-hero__tag" data-i18n="mg_tag">One stage. One vibe.</p>
+    <div class="mg-hero__cta">
+      <a class="btn btn--red" href="https://9lxbkc.zid.store/products/" target="_blank" rel="noopener"><span data-i18n="mg_tix">Get tickets</span></a>
+      <a class="btn btn--ghost" href="#board"><span data-i18n="mg_name">Write your name</span></a>
+    </div>
+  </div>
+  <svg class="mg-hero__wave" id="mgWave" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="none" stroke="#e6cb82" stroke-width="2"/><path fill="none" stroke="#f1e6cb" stroke-width="1.2" opacity=".7"/><path fill="none" stroke="#c8453a" stroke-width="3" opacity=".85"/>
+  </svg>
+</section>
+
+<section class="mg-cd" id="countdown" aria-labelledby="cdH">
+  <div class="mg-cd__lights" aria-hidden="true"></div>
+  <div class="mg-cd__in">
+    <h2 id="cdH" data-i18n="mg_next">Next gathering</h2>
+    <p class="mg-cd__when" id="cdWhen"></p>
+    <div class="mg-cd__row" id="cdRow"></div>
+    <p class="mg-cd__live" id="cdLive" hidden data-i18n="mg_live">On stage now</p>
+  </div>
+</section>
+
+<section class="mg-about" id="about">
+  <div class="mg-about__in">
+    <figure class="mg-poster"><img src="assets/music/poster.jpg" alt="" loading="lazy"></figure>
+    <div class="mg-about__txt">
+      <h2 data-i18n="mg_ab_h">Our Tuesday tradition</h2>
+      <p class="mg-lead" data-i18n="mg_p1"></p>
+      <p data-i18n="mg_p2"></p>
+      <p data-i18n="mg_p3"></p>
+      <p data-i18n="mg_p4"></p>
+      <ul class="mg-ways">
+        <li data-i18n="mg_w1">Sing karaoke</li><li data-i18n="mg_w2">Perform a song you prepared</li><li data-i18n="mg_w3">Bring your instrument</li><li data-i18n="mg_w4">Settle in and listen</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="mg-video" id="video">
+  <div class="mg-video__in">
+    <div class="mg-video__txt">
+      <h2 data-i18n="mg_v_h">From the Sync music team</h2>
+      <p data-i18n="mg_v_p">Hear how a Tuesday works, in their words.</p>
+      <p class="mg-note" data-i18n="mg_v_n">Captions are in English.</p>
+    </div>
+    <div class="mg-vid" id="mgVidBox">
+      <video id="mgTeam" src="assets/music/team.mp4" poster="assets/music/team-poster.jpg" playsinline preload="metadata"></video>
+      <button class="mg-vid__play" id="mgPlay" type="button" data-i18n-attr="aria-label:mg_play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="mg-photos" id="photos">
+  <h2 data-i18n="mg_ph_h">From past Tuesdays</h2>
+  <div class="mg-photos__row">
+    <button class="mg-ph" type="button" data-src="assets/music/photo1.jpg"><img src="assets/music/photo1.jpg" alt="" loading="lazy"></button>
+    <button class="mg-ph" type="button" data-src="assets/music/photo2.jpg"><img src="assets/music/photo2.jpg" alt="" loading="lazy"></button>
+    <button class="mg-ph" type="button" data-src="assets/music/photo3.jpg"><img src="assets/music/photo3.jpg" alt="" loading="lazy"></button>
+  </div>
+</section>
+
+<section class="mg-board" id="board">
+  <div class="mg-board__in">
+    <div class="mg-board__head">
+      <h2 data-i18n="mg_b_h">The Vibe Board</h2>
+      <p data-i18n="mg_b_p">At the cafe, you write your name on the board. Try the virtual one here: add your name, pick a face and say what you will do.</p>
+    </div>
+    <div class="mg-board__grid">
+      <div class="mg-vb">
+        <div class="mg-vb__frame"><div class="mg-vb__board" id="vb"><svg class="mg-vb__doodle" id="vbDoodle" aria-hidden="true"></svg><p class="mg-vb__empty" id="vbEmpty" data-i18n="mg_b_empty">The board is empty. Be the first to pin a name.</p></div></div>
+        <form class="mg-form" id="vbForm" autocomplete="off">
+          <label class="mg-f"><span data-i18n="mg_f_name">Your name</span><input id="vbName" maxlength="16" required data-i18n-attr="placeholder:mg_f_ph"></label>
+          <fieldset class="mg-f"><legend data-i18n="mg_f_do">I will</legend>
+            <div class="mg-opts" id="vbDo"></div></fieldset>
+          <fieldset class="mg-f"><legend data-i18n="mg_f_face">Pick a face</legend>
+            <div class="mg-opts mg-faces" id="vbFaces"></div></fieldset>
+          <div class="mg-form__row"><button class="btn btn--red" type="submit"><span data-i18n="mg_f_pin">Pin to the board</span></button><button class="btn btn--ghost" type="button" id="vbClear"><span data-i18n="mg_f_clear">Clear the board</span></button></div>
+          <p class="mg-note" data-i18n="mg_f_note">Saved on this device only. To perform, write your name on the board at the cafe.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mg-tix">
+  <div class="mg-tix__in">
+    <p class="mg-tix__script" data-i18n="mg_t_s">See you Tuesday</p>
+    <p class="mg-tix__p" data-i18n="mg_t_p">Come with a song, an instrument, a friend or just curiosity.</p>
+    <a class="btn btn--gold" href="https://9lxbkc.zid.store/products/" target="_blank" rel="noopener"><span data-i18n="mg_tix">Get tickets</span></a>
+  </div>
+</section>
+
+<dialog class="mg-lb" id="mgLb"><button class="mg-lb__x" id="mgLbX" type="button" data-i18n-attr="aria-label:d_close">✕</button><img id="mgLbImg" alt=""></dialog>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/music.js"></script>
+</body>
+</html>

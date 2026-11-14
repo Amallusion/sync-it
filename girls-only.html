@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Girls Only · Sync it Entertainment Cafe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<script>document.documentElement.classList.add('js');try{document.documentElement.setAttribute('data-mode','girls');sessionStorage.setItem('syncit:mode','girls');if(sessionStorage.getItem('syncit:tr'))document.documentElement.classList.add('tr-cover','pg-girls')}catch(e){document.documentElement.setAttribute('data-mode','girls')}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Quicksand:wght@400..700&family=Pacifico&family=Baloo+Bhaijaan+2:wght@400..800&family=Tajawal:wght@400;500;700&family=Playfair+Display:wght@400..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@300..700&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/girls.css">
+<link rel="stylesheet" href="css/girls-mode.css">
+</head>
+<body class="girls">
+<div id="site-header"></div>
+
+<!-- ===== HERO: the market video, dark plum overlay, centred title ===== -->
+<section class="gl-hero" id="top" aria-labelledby="glH1">
+  <video class="gl-hero__vid" src="assets/girls/market.mp4" poster="assets/girls/market-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="gl-hero__shade"></div>
+  <div class="gl-hero__copy">
+    <p class="gl-hero__script" data-i18n="gl_script">a room that is all yours</p>
+    <h1 id="glH1" data-i18n="gl_h1">Girls Only</h1>
+    <p class="gl-hero__sub" data-i18n="gl_sub">Markets, crafts and dress-up nights for girls who make things, wear things and cheer each other on.</p>
+    <div class="gl-hero__cta">
+      <a class="btn btn--red" href="#upcoming" data-pop="hero"><span data-i18n="gl_see">See what's on</span></a>
+      <a class="btn btn--ghost gl-ghost" href="#studio" data-pop="hero"><span data-i18n="gl_play">Play dress-up</span></a>
+    </div>
+  </div>
+  <div class="gl-hero__hint" aria-hidden="true"><span data-i18n="gl_tap">Tap anywhere for a surprise</span></div>
+</section>
+
+<!-- ===== Pick a card ===== -->
+<section class="gl-cards" aria-labelledby="pickH">
+  <div class="gl-head">
+    <h2 id="pickH" data-i18n="gl_pick">Pick a card</h2>
+    <p data-i18n="gl_pick_s">Six little reminders. Tap one to turn it over.</p>
+  </div>
+  <div class="gl-deck" id="deck"></div>
+</section>
+
+<!-- ===== Upcoming ===== -->
+<section class="gl-list" id="upcoming" aria-labelledby="upH">
+  <div class="gl-head">
+    <h2 id="upH" data-i18n="gl_up">Upcoming</h2>
+    <p data-i18n="gl_up_s">Open a card to see the details.</p>
+  </div>
+  <div class="gl-grid">
+    <article class="gl-card gl-card--market" id="cardMarket">
+      <button class="gl-card__poster" type="button" data-open="market" data-pop="card" data-i18n-attr="aria-label:gl_open_market">
+        <img src="assets/girls/market-poster-art.jpg" alt="" loading="lazy">
+      </button>
+      <div class="gl-card__body">
+        <h3 data-i18n="gl_m_t">Mini Market</h3>
+        <p class="gl-card__when" data-i18n="gl_m_when">Every Saturday, 8 pm to 12 am</p>
+        <p class="gl-card__txt" data-i18n="gl_m_txt">Handmade, homemade and hand-painted. Sellers set up their own table, shoppers wander and find something nobody else has.</p>
+        <div class="gl-count" id="mmCount" role="timer" aria-live="off">
+          <p class="gl-count__label" id="mmLabel"></p>
+          <div class="gl-count__row">
+            <span><b id="mmD">00</b><i data-i18n="gl_days">days</i></span>
+            <span><b id="mmH">00</b><i data-i18n="gl_hrs">hrs</i></span>
+            <span><b id="mmM">00</b><i data-i18n="gl_min">min</i></span>
+            <span><b id="mmS">00</b><i data-i18n="gl_sec">sec</i></span>
+          </div>
+        </div>
+        <div class="gl-card__cta">
+          <a class="btn btn--red" href="https://docs.google.com/forms/d/e/1FAIpQLSf4xOU39RlxzkNtUArrcCeVMfX7XBnaiQzAN4I-RXg4uakPpQ/viewform" target="_blank" rel="noopener" data-pop="card"><span data-i18n="gl_reg">Register to sell</span></a>
+          <button class="btn btn--ghost" type="button" data-open="market" data-pop="card"><span data-i18n="gl_rules">Rules and what to bring</span></button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gl-card gl-card--soon">
+      <div class="gl-soon" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="#ffd0e1" stroke="#f6a3c1" stroke-width="4" stroke-dasharray="2 9" stroke-linecap="round"/><path d="M60 24 C63 46 74 57 96 60 C74 63 63 74 60 96 C57 74 46 63 24 60 C46 57 57 46 60 24Z" fill="#fbe39a" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="gl-card__body">
+        <h3 data-i18n="gl_s_t">More nights are on the way</h3>
+        <p class="gl-card__txt" data-i18n="gl_s_txt">Workshops, dress-up nights and gatherings for girls are always being planned. Follow us to hear first.</p>
+        <div class="gl-card__cta">
+          <a class="btn btn--gold" href="https://www.instagram.com/sync.1t/" target="_blank" rel="noopener" data-pop="card"><span data-i18n="gl_follow">Follow on Instagram</span></a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Past ===== -->
+<section class="gl-list gl-list--past" id="past" aria-labelledby="pastH">
+  <div class="gl-head">
+    <h2 id="pastH" data-i18n="gl_past">Past nights</h2>
+    <p data-i18n="gl_past_s">The nights we dressed up for.</p>
+  </div>
+  <div class="gl-grid">
+    <article class="gl-card gl-card--fancy">
+      <button class="gl-card__poster" type="button" data-open="fancy" data-pop="card" data-i18n-attr="aria-label:gl_open_fancy">
+        <img src="assets/girls/fancy-poster.jpg" alt="" loading="lazy">
+      </button>
+      <div class="gl-card__body">
+        <h3 data-i18n="gl_f_t">Fancy Nancy Night</h3>
+        <p class="gl-card__when" data-i18n="gl_f_when">Friday 28 August</p>
+        <p class="gl-card__txt" data-i18n="gl_f_txt">A night of singing and fun, a crafting workshop and a whole room dressed in its fanciest. The best look won a free ticket.</p>
+        <div class="gl-card__cta">
+          <button class="btn btn--red" type="button" data-open="fancy" data-pop="card"><span data-i18n="gl_f_open">See the night</span></button>
+          <a class="btn btn--ghost" href="#studio" data-pop="card"><span data-i18n="gl_f_dress">Dress up for it</span></a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Dress-up studio ===== -->
+<section class="gl-studio" id="studio" aria-labelledby="stH">
+  <div class="gl-head">
+    <h2 id="stH" data-i18n="gl_st">The Fancy Night dress-up</h2>
+    <p data-i18n="gl_st_s">Pick a dress, do her hair, add the sparkle. Then give her a name worthy of the night.</p>
+  </div>
+  <div class="gl-studio__grid">
+    <div class="gl-doll">
+      <div class="gl-doll__stage" id="dollStage">
+        <svg id="doll" viewBox="0 0 300 520" role="img" data-i18n-attr="aria-label:gl_doll_aria"></svg>
+      </div>
+      <div class="gl-doll__act">
+        <button class="btn btn--gold" type="button" id="dSurprise" data-pop="game"><span data-i18n="gl_surprise">Surprise me</span></button>
+        <button class="btn btn--ghost" type="button" id="dUndo" data-pop="game"><span data-i18n="gl_undo">Undo</span></button>
+        <button class="btn btn--ghost" type="button" id="dReset" data-pop="game"><span data-i18n="gl_reset">Start over</span></button>
+      </div>
+    </div>
+    <div class="gl-panel">
+      <div class="gl-tabs" role="tablist" id="dTabs" data-i18n-attr="aria-label:gl_tabs"></div>
+      <div class="gl-opts" id="dOpts" role="tabpanel"></div>
+      <div class="gl-swatches" id="dSw"></div>
+      <button class="btn btn--red gl-done" type="button" id="dDone" data-pop="game"><span data-i18n="gl_done">I'm ready for the night</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- Look card -->
+<dialog class="gl-dlg gl-look" id="lookDlg" aria-labelledby="lookName">
+  <button class="gl-x" type="button" data-close data-i18n-attr="aria-label:gl_close">✕</button>
+  <div class="gl-look__card">
+    <div class="gl-look__frame"><svg id="lookDoll" viewBox="0 0 300 520" aria-hidden="true"></svg></div>
+    <p class="gl-look__pre" data-i18n="gl_look_pre">Tonight she is</p>
+    <h3 id="lookName"></h3>
+    <p class="gl-look__word" id="lookWord"></p>
+    <div class="gl-look__act">
+      <button class="btn btn--gold" type="button" id="lookNew"><span data-i18n="gl_newname">New name</span></button>
+      <button class="btn btn--ghost" type="button" data-close><span data-i18n="gl_keep">Keep playing</span></button>
+    </div>
+    <p class="gl-look__note" data-i18n="gl_look_note">Screenshot your look to share it. Bring the real one to the next dress-up night.</p>
+  </div>
+</dialog>
+
+<!-- Mini Market room -->
+<dialog class="gl-dlg gl-room" id="room-market" aria-labelledby="rmT">
+  <button class="gl-x" type="button" data-close data-i18n-attr="aria-label:gl_close">✕</button>
+  <div class="gl-room__in">
+    <img class="gl-room__poster" src="assets/girls/market-poster-art.jpg" alt="" loading="lazy">
+    <div class="gl-room__txt">
+      <h3 id="rmT" data-i18n="gl_m_t">Mini Market</h3>
+      <p class="gl-card__when" data-i18n="gl_m_when">Every Saturday, 8 pm to 12 am</p>
+      <p data-i18n="gl_rm_p">If you make it, bake it, paint it, sew it or design it, this is your stall. Girls come to browse, to buy and to meet the people behind the things.</p>
+      <h4 data-i18n="gl_rm_h">How it works</h4>
+      <ul class="gl-list-rules">
+        <li data-i18n="gl_r1">Register first with the form, so we know you are coming.</li>
+        <li data-i18n="gl_r2">Bring your own table.</li>
+        <li data-i18n="gl_r3">Bring your own lights, so your pieces shine.</li>
+        <li data-i18n="gl_r4">Handmade and homemade pieces are what we love most.</li>
+        <li data-i18n="gl_r5">Girls only, for sellers and shoppers.</li>
+      </ul>
+      <div class="gl-card__cta">
+        <a class="btn btn--red" href="https://docs.google.com/forms/d/e/1FAIpQLSf4xOU39RlxzkNtUArrcCeVMfX7XBnaiQzAN4I-RXg4uakPpQ/viewform" target="_blank" rel="noopener" data-pop="card"><span data-i18n="gl_reg">Register to sell</span></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Fancy Nancy room -->
+<dialog class="gl-dlg gl-room" id="room-fancy" aria-labelledby="rfT">
+  <button class="gl-x" type="button" data-close data-i18n-attr="aria-label:gl_close">✕</button>
+  <div class="gl-room__in">
+    <img class="gl-room__poster" src="assets/girls/fancy-poster.jpg" alt="" loading="lazy">
+    <div class="gl-room__txt">
+      <h3 id="rfT" data-i18n="gl_f_t">Fancy Nancy Night</h3>
+      <p class="gl-card__when" data-i18n="gl_f_when">Friday 28 August</p>
+      <p data-i18n="gl_rf_p">One very fancy evening, made for girls who love glitter, ribbons and big words.</p>
+      <h4 data-i18n="gl_rf_h">The night</h4>
+      <ul class="gl-list-rules">
+        <li data-i18n="gl_fr1">A night of singing and fun.</li>
+        <li data-i18n="gl_fr2">A crafting workshop, to make your own pieces.</li>
+        <li data-i18n="gl_fr3">An exceptional Fancy Nancy atmosphere.</li>
+        <li data-i18n="gl_fr4">Everyone wears their best look inspired by Fancy Nancy.</li>
+        <li data-i18n="gl_fr5">The best look wins a free ticket.</li>
+      </ul>
+      <div class="gl-card__cta">
+        <a class="btn btn--red" href="#studio" data-close data-pop="card"><span data-i18n="gl_f_dress">Dress up for it</span></a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script src="js/girls.js"></script>
+</body>
+</html>
